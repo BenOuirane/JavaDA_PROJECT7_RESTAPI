@@ -1,6 +1,6 @@
 package com.nnk.springboot.controllers;
 
-import com.nnk.springboot.domain.RuleName;
+//import com.nnk.springboot.domain.RuleName;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
+/*
 @Controller
 public class RuleNameController {
     // TODO: Inject RuleName service
@@ -52,3 +53,4 @@ public class RuleNameController {
         return "redirect:/ruleName/list";
     }
 }
+*/
