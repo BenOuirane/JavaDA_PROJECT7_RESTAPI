@@ -1,4 +1,0 @@
-com\nnk\springboot\Application.class
-com\nnk\springboot\domain\User.class
-com\nnk\springboot\repositories\UserRepository.class
-com\nnk\springboot\controllers\HomeController.class
