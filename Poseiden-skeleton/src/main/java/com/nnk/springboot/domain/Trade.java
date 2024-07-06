@@ -11,6 +11,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "trade")
@@ -18,11 +20,11 @@ public class Trade {
 	    @Id
 	    @GeneratedValue(strategy= GenerationType.IDENTITY)
 	    private Integer id;
-	    @Column(nullable = false)
+	    @NotBlank(message = "Account  cannot be null")
 	    private String account;
-	    @Column(nullable = false)
+	    @NotBlank(message = "Type  cannot be null")
 	    private String type;
-	    @Column(nullable = false)
+	    @NotNull(message = "Buy Quantity  cannot be null")
 	    private Double buyQuantity;
 	    private Double sellQuantity;
 	    private Double buyPrice;

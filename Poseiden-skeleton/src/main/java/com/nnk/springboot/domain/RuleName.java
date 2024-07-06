@@ -1,11 +1,11 @@
 package com.nnk.springboot.domain;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "rulename")
@@ -13,17 +13,17 @@ public class RuleName {
 	@Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
-    @Column(nullable = false)
+    @NotBlank(message = "Name  cannot be null")
     private String name;
-    @Column(nullable = false)
+    @NotBlank(message = "Description  cannot be null")
     private String description;
-    @Column(nullable = false)
+    @NotBlank(message = "Json  cannot be null")
     private String json;
-    @Column(nullable = false)
+    @NotBlank(message = "Template  cannot be null")
     private String template;
-    @Column(nullable = false)
+    @NotBlank(message = "SqlStr  cannot be null")
     private String sqlStr;
-    @Column(nullable = false)
+    @NotBlank(message = "SqlPart  cannot be null")
     private String sqlPart;
 	public Integer getId() {
 		return id;
