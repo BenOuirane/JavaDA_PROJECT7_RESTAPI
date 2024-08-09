@@ -26,8 +26,6 @@ public class BidListController {
     public String home(Model model)
     {
         // TODO: call service find all bids to show to the view
-    	// this the html code to add later
-    	//			Logged in user: <b th:inline="text"  class="user"> [[${#httpServletRequest.remoteUser}]] </b>
         model.addAttribute("bidLists", bidListService.findAll());
         return "bidList/list";
     }

@@ -1,5 +1,5 @@
 package com.nnk.springboot.controllers;
-/*
+
 import com.nnk.springboot.domain.User;
 import com.nnk.springboot.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,4 +74,3 @@ public class UserController {
         return "redirect:/user/list";
     }
 }
-*/

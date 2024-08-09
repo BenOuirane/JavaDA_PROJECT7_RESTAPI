@@ -19,7 +19,7 @@ public class LoginController {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("login");
         return mav;
-    }
+    }    
 
     @GetMapping("secure/article-details")
     public ModelAndView getAllUserArticles() {
@@ -37,4 +37,5 @@ public class LoginController {
         mav.setViewName("403");
         return mav;
     }
+
 }

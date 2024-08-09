@@ -30,9 +30,6 @@ public class RatingController {
         // TODO: find all Rating, add to model
     	List<Rating> ratings = ratingService.getAllRatings();
         model.addAttribute("ratings", ratings);
-        // this one to return in the  html page
-        //			Logged in user: <b th:inline="text"  class="user"> [[${#httpServletRequest.remoteUser}]] </b> 
-
         return "rating/list";
     }
 

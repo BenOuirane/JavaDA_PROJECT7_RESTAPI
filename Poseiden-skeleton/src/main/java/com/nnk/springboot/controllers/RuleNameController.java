@@ -25,9 +25,6 @@ public class RuleNameController {
     public String home(Model model)
     {
         // TODO: find all RuleName, add to model
-    	//this is the html code from list.html to add it later
-    	//			Logged in user: <b th:inline="text"  class="user"> [[${#httpServletRequest.remoteUser}]] </b>
-
         model.addAttribute("ruleNames", ruleNameService.findAll());
         return "ruleName/list";
     }

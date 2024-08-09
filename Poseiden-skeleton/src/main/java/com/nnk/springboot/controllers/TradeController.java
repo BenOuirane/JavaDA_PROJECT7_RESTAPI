@@ -27,8 +27,6 @@ public class TradeController {
     public String home(Model model)
     {
         // TODO: find all Trade, add to model
-    	//this the deleted code from list.html
-    	//			Logged in user: <b th:inline="text"  class="user"> [[${#httpServletRequest.remoteUser}]] </b>
         model.addAttribute("trades", tradeService.findAll());
         return "trade/list";
     }

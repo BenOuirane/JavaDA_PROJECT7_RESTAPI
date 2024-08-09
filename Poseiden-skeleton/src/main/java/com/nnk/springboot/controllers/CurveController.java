@@ -28,9 +28,6 @@ public class CurveController {
     public String home(Model model)
     {
         // TODO: find all Curve Point, add to model
-    	//this html code from list.html 
-	//	<!-- Logged in user: <b th:inline="text"  class="user"> [[${#httpServletRequest.remoteUser}]] </b>  -->	
-
         model.addAttribute("curvePoints", curvePointService.findAll());
         return "curvePoint/list";
     }
