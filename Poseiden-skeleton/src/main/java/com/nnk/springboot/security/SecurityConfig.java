@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -32,18 +33,34 @@ public class SecurityConfig {
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
 		http.csrf(c -> c.disable())
             .authorizeHttpRequests(request -> request
-            .requestMatchers("/admin/home").hasAuthority("ADMIN")
-            .requestMatchers("/").hasAuthority("USER")
             .requestMatchers("/","/css/**").permitAll()
+            .requestMatchers("/admin/**").hasAuthority("ADMIN")
+            .requestMatchers("/").hasAuthority("USER")
             .anyRequest()
             .authenticated()
             )
-        .formLogin(form -> form.loginPage("/app/login").loginProcessingUrl("/app/login")
-        	.successHandler(customSuccessHandler).permitAll())
-        .logout(form -> form.invalidateHttpSession(true).clearAuthentication(true)
-        		.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-        		.logoutSuccessUrl("/login?logout").permitAll());
-		
+            .formLogin(form -> form
+            .loginPage("/app/login")
+            .loginProcessingUrl("/app/login")
+        	.successHandler(customSuccessHandler)
+        	.permitAll()
+        	
+        	)
+        .logout(logout -> logout
+        		.logoutRequestMatcher(new AntPathRequestMatcher("/app-logout"))
+        		.logoutSuccessUrl("/login?logout")
+        		.invalidateHttpSession(true)
+        		.clearAuthentication(true)
+        		.permitAll()
+
+        		)
+        .sessionManagement(session -> session
+                .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED) // Crée une session uniquement si nécessaire
+                .sessionFixation().newSession() // Crée une nouvelle session après l'authentification
+                .maximumSessions(1) // Limite le nombre de sessions simultanées à 1
+                .expiredUrl("/login?sessionExpired") // URL à rediriger lorsque la session expire
+            );
+	
 		return http.build();
 	}
 
