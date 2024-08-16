@@ -1,17 +1,15 @@
 package com.nnk.springboot.domain;
 
-//import org.springframework.beans.factory.annotation.Required;
-
-
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import java.sql.Timestamp;
 
 
@@ -22,10 +20,13 @@ public class BidList {
 	    @GeneratedValue(strategy= GenerationType.IDENTITY)
 	    private Integer id;
 	    @Column(nullable = false)
+	    @NotBlank(message = "Account cannot be null")
 	    private String account;
 	    @Column(nullable = false)
+	    @NotBlank(message = "Type cannot be null")
 	    private String type;
 	    @Column(nullable = false)
+	    @NotNull(message = "bid Quantity cannot be null")
 	    private Double bidQuantity;
 	    private Double askQuantity;
 	    private Double bid;
