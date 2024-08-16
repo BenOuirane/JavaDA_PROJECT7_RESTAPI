@@ -13,9 +13,7 @@ public class UserDataLoader implements CommandLineRunner{
 	
 	@Autowired
 	private UserRepository userRepository;
-	
-
-    
+	   
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
 	@Override
@@ -23,16 +21,16 @@ public class UserDataLoader implements CommandLineRunner{
 		loadUserData();		
 	}
 	
-	 private void loadUserData() {
+	private void loadUserData() {
 	        String encodedPassword = passwordEncoder.encode("123");
+	        String encodedPassword1 = passwordEncoder.encode("Passw0rd!");
 
 	        if (userRepository.count() == 0) {
-	            User user = new User(1,"julian",encodedPassword,"cauwet","USER");
-	            User user1 = new User(2,"hajer",encodedPassword,"ben","ADMIN");
+	            User user1 = new User(1,"hajer",encodedPassword,"ben","ADMIN");
+	            User user2 = new User(2,"julien",encodedPassword1,"cauwet","USER");
 
-	            userRepository.save(user);
 	            userRepository.save(user1);
-
+	            userRepository.save(user2);
 
 	            System.out.println("Sample user data loaded.");
 	        } else {
@@ -40,5 +38,4 @@ public class UserDataLoader implements CommandLineRunner{
 	        }
 	    }
 	    
-
 }

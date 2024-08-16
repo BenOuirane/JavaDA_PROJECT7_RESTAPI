@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #dc3545;
+        }
+        p {
+            font-size: 18px;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Validation Error</h1>
+<p th:text="${message}">Validation failed. Please check your input and try again.</p>
+<a href="/">Return to Home Page</a>
+
+</body>
+</html>

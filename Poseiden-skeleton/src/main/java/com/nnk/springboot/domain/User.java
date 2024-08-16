@@ -2,7 +2,8 @@ package com.nnk.springboot.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "users")
@@ -13,7 +14,11 @@ public class User {
     @NotBlank(message = "Username is mandatory")
     private String username;
     @NotBlank(message = "Password is mandatory")
-    private String password;
+    @Size(min = 8, message = "Password must be at least 8 characters long")
+    @Pattern(
+        regexp = "^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
+        message = "Password must contain at least one uppercase letter, one digit, and one special character"
+    )    private String password;
     @NotBlank(message = "FullName is mandatory")
     private String fullname;
     @NotBlank(message = "Role is mandatory")
