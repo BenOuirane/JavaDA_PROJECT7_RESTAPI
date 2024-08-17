@@ -33350,3 +33350,1063 @@ com.nnk.springboot.exceptions.BidListNotFoundException: BidList not found
 2024-08-17T16:56:09.780+02:00  INFO 17084 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-08-17T16:56:09.797+02:00 DEBUG 17084 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@68a482f4, started on Sat Aug 17 16:56:04 CEST 2024
 2024-08-17T16:56:09.804+02:00  INFO 17084 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T16:56:21.132+02:00 DEBUG 5188 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@45801322
+2024-08-17T16:56:22.746+02:00  INFO 5188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T16:56:22.941+02:00  INFO 5188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 6 JPA repository interfaces.
+2024-08-17T16:56:25.360+02:00  INFO 5188 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T16:56:26.308+02:00 DEBUG 5188 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@496a514f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@430e9d37)
+2024-08-17T16:56:29.260+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T16:56:29.262+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T16:56:29.264+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T16:56:29.266+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T16:56:29.267+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T16:56:29.269+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:56:29.270+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T16:56:29.272+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T16:56:29.273+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:56:29.275+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T16:56:29.277+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T16:56:29.278+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T16:56:29.280+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T16:56:29.281+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:56:29.283+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T16:56:29.284+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T16:56:29.286+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T16:56:29.287+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T16:56:29.293+02:00  INFO 5188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T16:56:30.409+02:00  WARN 5188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T16:56:30.831+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T16:56:31.121+02:00 DEBUG 5188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T16:56:31.245+02:00  INFO 5188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a754f89, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d7924c4, org.springframework.security.web.context.SecurityContextHolderFilter@2de3095c, org.springframework.security.web.header.HeaderWriterFilter@3a2ef599, org.springframework.security.web.authentication.logout.LogoutFilter@482741af, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59108fbf, org.springframework.security.web.session.ConcurrentSessionFilter@239707bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57d5b677, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60789398, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40c93da3, org.springframework.security.web.session.SessionManagementFilter@6ae0c053, org.springframework.security.web.access.ExceptionTranslationFilter@478cd2e8, org.springframework.security.web.access.intercept.AuthorizationFilter@6813ed1e]
+2024-08-17T16:56:31.667+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T16:56:31.779+02:00 DEBUG 5188 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T16:56:32.076+02:00  INFO 5188 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T16:56:32.077+02:00  INFO 5188 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T16:56:32.080+02:00  INFO 5188 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-08-17T16:56:32.857+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T16:56:32.874+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T16:56:32.879+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T16:56:32.885+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T16:56:32.891+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T16:56:33.076+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T16:56:34.001+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.as_of_date,
+        c1_0.creation_date,
+        c1_0.term,
+        c1_0.value 
+    from
+        curvepoint c1_0 
+    where
+        c1_0.id=?
+2024-08-17T16:56:34.067+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        curvepoint
+        (as_of_date,creation_date,term,value) 
+    values
+        (?,?,?,?)
+2024-08-17T16:56:34.153+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    update
+        curvepoint 
+    set
+        as_of_date=?,
+        term=?,
+        value=? 
+    where
+        id=?
+2024-08-17T16:56:34.157+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.as_of_date,
+        c1_0.creation_date,
+        c1_0.term,
+        c1_0.value 
+    from
+        curvepoint c1_0
+2024-08-17T16:56:34.195+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.RuleTests]: RuleTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:34.198+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.RuleTests
+2024-08-17T16:56:34.254+02:00 DEBUG 5188 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e1275f9
+2024-08-17T16:56:34.580+02:00  INFO 5188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T16:56:34.619+02:00  INFO 5188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 6 JPA repository interfaces.
+2024-08-17T16:56:34.831+02:00  INFO 5188 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T16:56:35.037+02:00 DEBUG 5188 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c479c94) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@380d659d)
+2024-08-17T16:56:35.450+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T16:56:35.453+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T16:56:35.455+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T16:56:35.456+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T16:56:35.458+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T16:56:35.459+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:56:35.461+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T16:56:35.463+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T16:56:35.464+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:56:35.466+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T16:56:35.467+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T16:56:35.470+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T16:56:35.471+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T16:56:35.472+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:56:35.473+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T16:56:35.475+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T16:56:35.476+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T16:56:35.477+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T16:56:35.479+02:00  INFO 5188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T16:56:35.715+02:00  WARN 5188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T16:56:35.769+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T16:56:35.822+02:00 DEBUG 5188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T16:56:35.840+02:00  INFO 5188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35165d14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c6fa723, org.springframework.security.web.context.SecurityContextHolderFilter@1fd81048, org.springframework.security.web.header.HeaderWriterFilter@66195578, org.springframework.security.web.authentication.logout.LogoutFilter@72d59aa9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6bc89216, org.springframework.security.web.session.ConcurrentSessionFilter@728e3dc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3346245e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2eb38561, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57817e8a, org.springframework.security.web.session.SessionManagementFilter@39949f88, org.springframework.security.web.access.ExceptionTranslationFilter@2379d848, org.springframework.security.web.access.intercept.AuthorizationFilter@42192f93]
+2024-08-17T16:56:35.902+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T16:56:35.912+02:00 DEBUG 5188 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T16:56:35.978+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T16:56:35.984+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T16:56:35.989+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T16:56:35.995+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T16:56:36.001+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T16:56:36.217+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T16:56:36.234+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        rulename
+        (description,json,name,sql_part,sql_str,template) 
+    values
+        (?,?,?,?,?,?)
+2024-08-17T16:56:36.240+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    update
+        rulename 
+    set
+        description=?,
+        json=?,
+        name=?,
+        sql_part=?,
+        sql_str=?,
+        template=? 
+    where
+        id=?
+2024-08-17T16:56:36.242+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.json,
+        r1_0.name,
+        r1_0.sql_part,
+        r1_0.sql_str,
+        r1_0.template 
+    from
+        rulename r1_0
+2024-08-17T16:56:36.253+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.TradeTests]: TradeTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:36.256+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.TradeTests
+2024-08-17T16:56:36.268+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        trade
+        (account,benchmark,book,buy_price,buy_quantity,creation_date,creation_name,deal_name,deal_type,revision_date,revision_name,security,sell_price,sell_quantity,side,source_list_id,status,trade_date,trader,type) 
+    values
+        (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2024-08-17T16:56:36.278+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    update
+        trade 
+    set
+        account=?,
+        benchmark=?,
+        book=?,
+        buy_price=?,
+        buy_quantity=?,
+        creation_name=?,
+        deal_name=?,
+        deal_type=?,
+        revision_date=?,
+        revision_name=?,
+        security=?,
+        sell_price=?,
+        sell_quantity=?,
+        side=?,
+        source_list_id=?,
+        status=?,
+        trade_date=?,
+        trader=?,
+        type=? 
+    where
+        id=?
+2024-08-17T16:56:36.281+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.account,
+        t1_0.benchmark,
+        t1_0.book,
+        t1_0.buy_price,
+        t1_0.buy_quantity,
+        t1_0.creation_date,
+        t1_0.creation_name,
+        t1_0.deal_name,
+        t1_0.deal_type,
+        t1_0.revision_date,
+        t1_0.revision_name,
+        t1_0.security,
+        t1_0.sell_price,
+        t1_0.sell_quantity,
+        t1_0.side,
+        t1_0.source_list_id,
+        t1_0.status,
+        t1_0.trade_date,
+        t1_0.trader,
+        t1_0.type 
+    from
+        trade t1_0
+2024-08-17T16:56:36.296+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.BidTests]: BidTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:36.302+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.BidTests
+2024-08-17T16:56:36.391+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        bidlist
+        (account,ask,ask_quantity,benchmark,bid,bid_list_date,bid_quantity,book,commentary,creation_date,creation_name,deal_name,deal_type,revision_date,revision_name,security,side,source_list_id,status,trader,type) 
+    values
+        (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2024-08-17T16:56:36.398+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    update
+        bidlist 
+    set
+        account=?,
+        ask=?,
+        ask_quantity=?,
+        benchmark=?,
+        bid=?,
+        bid_list_date=?,
+        bid_quantity=?,
+        book=?,
+        commentary=?,
+        creation_name=?,
+        deal_name=?,
+        deal_type=?,
+        revision_date=?,
+        revision_name=?,
+        security=?,
+        side=?,
+        source_list_id=?,
+        status=?,
+        trader=?,
+        type=? 
+    where
+        id=?
+2024-08-17T16:56:36.401+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0
+2024-08-17T16:56:36.424+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.PasswordEncodeTest]: PasswordEncodeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:36.426+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.PasswordEncodeTest
+2024-08-17T16:56:36.544+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.RatingTests]: RatingTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:36.546+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.RatingTests
+2024-08-17T16:56:36.557+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        rating
+        (fitch_rating,moodys_rating,order_number,sandprating) 
+    values
+        (?,?,?,?)
+2024-08-17T16:56:36.562+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    update
+        rating 
+    set
+        fitch_rating=?,
+        moodys_rating=?,
+        order_number=?,
+        sandprating=? 
+    where
+        id=?
+2024-08-17T16:56:36.564+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.fitch_rating,
+        r1_0.moodys_rating,
+        r1_0.order_number,
+        r1_0.sandprating 
+    from
+        rating r1_0
+2024-08-17T16:56:36.573+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.ApplicationContextTest]: ApplicationContextTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:36.576+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.ApplicationContextTest
+2024-08-17T16:56:36.596+02:00  INFO 5188 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.controllerTest.BidListControllerTest]: BidListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T16:56:36.612+02:00  INFO 5188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.controllerTest.BidListControllerTest
+2024-08-17T16:56:37.237+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:56:37.241+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:56:37.243+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:56:37.244+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:56:37.260+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:56:37.364+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:56:37.542+02:00 DEBUG 5188 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T16:56:38.807+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:56:38.808+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:56:38.809+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:56:38.809+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:56:38.810+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:56:38.814+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:56:38.819+02:00 DEBUG 5188 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T16:56:38.855+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:56:38.856+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:56:38.858+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:56:38.859+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:56:38.860+02:00 DEBUG 5188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:56:38.864+02:00 DEBUG 5188 --- [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:56:38.868+02:00 DEBUG 5188 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T16:56:39.905+02:00 DEBUG 5188 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@45801322, started on Sat Aug 17 16:56:21 CEST 2024
+2024-08-17T16:56:39.917+02:00  INFO 5188 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T16:56:39.933+02:00 DEBUG 5188 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e1275f9, started on Sat Aug 17 16:56:34 CEST 2024
+2024-08-17T16:56:39.944+02:00  INFO 5188 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T16:58:30.145+02:00  INFO 588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-17T16:58:30.148+02:00  INFO 588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-17T16:58:30.742+02:00  INFO 588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T16:58:30.819+02:00  INFO 588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2024-08-17T16:58:31.371+02:00  INFO 588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-08-17T16:58:31.436+02:00  INFO 588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1288 ms
+2024-08-17T16:58:31.978+02:00  INFO 588 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T16:58:32.300+02:00 DEBUG 588 --- [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@276a1457) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@63802902)
+2024-08-17T16:58:33.336+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T16:58:33.339+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T16:58:33.340+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T16:58:33.341+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T16:58:33.342+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T16:58:33.343+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:58:33.344+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T16:58:33.345+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T16:58:33.346+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:58:33.347+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T16:58:33.348+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T16:58:33.350+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T16:58:33.351+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T16:58:33.352+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T16:58:33.353+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T16:58:33.354+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T16:58:33.355+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T16:58:33.355+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T16:58:33.358+02:00  INFO 588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T16:58:33.844+02:00  WARN 588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T16:58:33.981+02:00 DEBUG 588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T16:58:34.049+02:00 DEBUG 588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T16:58:34.089+02:00  INFO 588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@799241f7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@605d37a0, org.springframework.security.web.context.SecurityContextHolderFilter@20f39e83, org.springframework.security.web.header.HeaderWriterFilter@2cdfa3ae, org.springframework.security.web.authentication.logout.LogoutFilter@623ddf15, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3fa42277, org.springframework.security.web.session.ConcurrentSessionFilter@6980cf5b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@476c2274, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@777a83b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e741646, org.springframework.security.web.session.SessionManagementFilter@693d4638, org.springframework.security.web.access.ExceptionTranslationFilter@53276faa, org.springframework.security.web.access.intercept.AuthorizationFilter@7e2cef5a]
+2024-08-17T16:58:34.149+02:00 DEBUG 588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T16:58:34.182+02:00 DEBUG 588 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T16:58:34.305+02:00  INFO 588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-17T16:58:34.361+02:00  INFO 588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-08-17T16:58:34.644+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T16:58:34.654+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T16:58:34.658+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T16:58:34.662+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T16:58:34.666+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T16:58:34.847+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T16:58:48.460+02:00  INFO 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-17T16:58:48.461+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-17T16:58:48.461+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-17T16:58:48.461+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-17T16:58:48.462+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e008b59
+2024-08-17T16:58:48.463+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@24267e71
+2024-08-17T16:58:48.463+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-17T16:58:48.463+02:00  INFO 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-17T16:58:48.498+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:48.500+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:48.501+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:48.501+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:48.556+02:00 DEBUG 588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/login", parameters={}
+2024-08-17T16:58:48.565+02:00 DEBUG 588 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.LoginController#login()
+2024-08-17T16:58:48.584+02:00 DEBUG 588 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:58:48.884+02:00 DEBUG 588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:58:52.527+02:00 DEBUG 588 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:58:52.641+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.HomeController#adminHome(Model, HttpSession)
+2024-08-17T16:58:52.641+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.HomeController#adminHome(Model, HttpSession)
+2024-08-17T16:58:52.642+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.HomeController#adminHome(Model, HttpSession)
+2024-08-17T16:58:52.642+02:00 DEBUG 588 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/home", parameters={}
+2024-08-17T16:58:52.642+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.HomeController#adminHome(Model, HttpSession)
+2024-08-17T16:58:52.644+02:00 DEBUG 588 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:58:52.654+02:00 DEBUG 588 --- [http-nio-8080-exec-6] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-08-17T16:58:52.656+02:00 DEBUG 588 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-08-17T16:58:52.661+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:58:52.661+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:58:52.661+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:58:52.662+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:58:52.662+02:00 DEBUG 588 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/bidList/list", parameters={}
+2024-08-17T16:58:52.662+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:58:52.664+02:00 DEBUG 588 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:58:52.668+02:00 DEBUG 588 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0
+2024-08-17T16:58:52.678+02:00 DEBUG 588 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:58:52.703+02:00 DEBUG 588 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:58:52.710+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:52.711+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:52.711+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
+2024-08-17T16:58:52.712+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:52.724+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:58:55.888+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:58:55.889+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:58:55.890+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:58:55.890+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:58:55.890+02:00 DEBUG 588 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/bidList/add", parameters={}
+2024-08-17T16:58:55.891+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T16:58:55.893+02:00 DEBUG 588 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:58:55.898+02:00 DEBUG 588 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:58:55.929+02:00 DEBUG 588 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:58:55.938+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:55.939+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:55.939+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
+2024-08-17T16:58:55.940+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:58:55.943+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:03.228+02:00 DEBUG 588 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:59:03.229+02:00 DEBUG 588 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:59:03.229+02:00 DEBUG 588 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:59:03.229+02:00 DEBUG 588 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:59:03.229+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/bidList/validate", parameters={masked}
+2024-08-17T16:59:03.230+02:00 DEBUG 588 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T16:59:03.232+02:00 DEBUG 588 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:03.299+02:00 DEBUG 588 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        bidlist
+        (account,ask,ask_quantity,benchmark,bid,bid_list_date,bid_quantity,book,commentary,creation_date,creation_name,deal_name,deal_type,revision_date,revision_name,security,side,source_list_id,status,trader,type) 
+    values
+        (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2024-08-17T16:59:03.324+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-08-17T16:59:03.325+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-08-17T16:59:03.330+02:00 DEBUG 588 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:03.331+02:00 DEBUG 588 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:03.331+02:00 DEBUG 588 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:03.331+02:00 DEBUG 588 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:03.331+02:00 DEBUG 588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/bidList/list", parameters={}
+2024-08-17T16:59:03.331+02:00 DEBUG 588 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:03.333+02:00 DEBUG 588 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:03.336+02:00 DEBUG 588 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0
+2024-08-17T16:59:03.340+02:00 DEBUG 588 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:59:03.348+02:00 DEBUG 588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:03.354+02:00 DEBUG 588 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:03.355+02:00 DEBUG 588 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:03.355+02:00 DEBUG 588 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
+2024-08-17T16:59:03.356+02:00 DEBUG 588 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:03.359+02:00 DEBUG 588 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:05.335+02:00 DEBUG 588 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#showUpdateForm(Integer, Model)
+2024-08-17T16:59:05.335+02:00 DEBUG 588 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#showUpdateForm(Integer, Model)
+2024-08-17T16:59:05.336+02:00 DEBUG 588 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#showUpdateForm(Integer, Model)
+2024-08-17T16:59:05.337+02:00 DEBUG 588 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#showUpdateForm(Integer, Model)
+2024-08-17T16:59:05.337+02:00 DEBUG 588 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/bidList/update/19", parameters={}
+2024-08-17T16:59:05.338+02:00 DEBUG 588 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#showUpdateForm(Integer, Model)
+2024-08-17T16:59:05.340+02:00 DEBUG 588 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:05.353+02:00 DEBUG 588 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0 
+    where
+        b1_0.id=?
+2024-08-17T16:59:05.356+02:00 DEBUG 588 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:59:05.365+02:00 DEBUG 588 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:05.374+02:00 DEBUG 588 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:05.374+02:00 DEBUG 588 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:05.375+02:00 DEBUG 588 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
+2024-08-17T16:59:05.375+02:00 DEBUG 588 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:05.378+02:00 DEBUG 588 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:13.042+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:59:13.043+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:59:13.043+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:59:13.044+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:59:13.044+02:00 DEBUG 588 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/bidList/update/19", parameters={masked}
+2024-08-17T16:59:13.045+02:00 DEBUG 588 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T16:59:13.048+02:00 DEBUG 588 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:13.073+02:00 DEBUG 588 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0 
+    where
+        b1_0.id=?
+2024-08-17T16:59:13.080+02:00 DEBUG 588 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0 
+    where
+        b1_0.id=?
+2024-08-17T16:59:13.091+02:00 DEBUG 588 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    update
+        bidlist 
+    set
+        account=?,
+        ask=?,
+        ask_quantity=?,
+        benchmark=?,
+        bid=?,
+        bid_list_date=?,
+        bid_quantity=?,
+        book=?,
+        commentary=?,
+        creation_name=?,
+        deal_name=?,
+        deal_type=?,
+        revision_date=?,
+        revision_name=?,
+        security=?,
+        side=?,
+        source_list_id=?,
+        status=?,
+        trader=?,
+        type=? 
+    where
+        id=?
+2024-08-17T16:59:13.096+02:00 DEBUG 588 --- [http-nio-8080-exec-6] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-08-17T16:59:13.096+02:00 DEBUG 588 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-08-17T16:59:13.101+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:13.101+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:13.101+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:13.101+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:13.102+02:00 DEBUG 588 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/bidList/list", parameters={}
+2024-08-17T16:59:13.102+02:00 DEBUG 588 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:13.103+02:00 DEBUG 588 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:13.106+02:00 DEBUG 588 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0
+2024-08-17T16:59:13.110+02:00 DEBUG 588 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:59:13.117+02:00 DEBUG 588 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:13.124+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:13.125+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:13.126+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
+2024-08-17T16:59:13.127+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:13.131+02:00 DEBUG 588 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:15.743+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#deleteBid(Integer, Model)
+2024-08-17T16:59:15.744+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#deleteBid(Integer, Model)
+2024-08-17T16:59:15.744+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#deleteBid(Integer, Model)
+2024-08-17T16:59:15.744+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#deleteBid(Integer, Model)
+2024-08-17T16:59:15.745+02:00 DEBUG 588 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/bidList/delete/19", parameters={}
+2024-08-17T16:59:15.745+02:00 DEBUG 588 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#deleteBid(Integer, Model)
+2024-08-17T16:59:15.747+02:00 DEBUG 588 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:15.750+02:00 DEBUG 588 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0 
+    where
+        b1_0.id=?
+2024-08-17T16:59:15.752+02:00 DEBUG 588 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0 
+    where
+        b1_0.id=?
+2024-08-17T16:59:15.759+02:00 DEBUG 588 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    delete 
+    from
+        bidlist 
+    where
+        id=?
+2024-08-17T16:59:15.771+02:00 DEBUG 588 --- [http-nio-8080-exec-9] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-08-17T16:59:15.772+02:00 DEBUG 588 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-08-17T16:59:15.776+02:00 DEBUG 588 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:15.777+02:00 DEBUG 588 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:15.777+02:00 DEBUG 588 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:15.777+02:00 DEBUG 588 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:15.777+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/bidList/list", parameters={}
+2024-08-17T16:59:15.777+02:00 DEBUG 588 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#home(Model)
+2024-08-17T16:59:15.779+02:00 DEBUG 588 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T16:59:15.781+02:00 DEBUG 588 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.account,
+        b1_0.ask,
+        b1_0.ask_quantity,
+        b1_0.benchmark,
+        b1_0.bid,
+        b1_0.bid_list_date,
+        b1_0.bid_quantity,
+        b1_0.book,
+        b1_0.commentary,
+        b1_0.creation_date,
+        b1_0.creation_name,
+        b1_0.deal_name,
+        b1_0.deal_type,
+        b1_0.revision_date,
+        b1_0.revision_name,
+        b1_0.security,
+        b1_0.side,
+        b1_0.source_list_id,
+        b1_0.status,
+        b1_0.trader,
+        b1_0.type 
+    from
+        bidlist b1_0
+2024-08-17T16:59:15.784+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-08-17T16:59:15.790+02:00 DEBUG 588 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T16:59:15.797+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:15.797+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:15.797+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
+2024-08-17T16:59:15.798+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-17T16:59:15.801+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
