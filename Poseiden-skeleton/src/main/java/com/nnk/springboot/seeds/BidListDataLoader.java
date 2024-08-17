@@ -28,10 +28,7 @@ public class BidListDataLoader implements CommandLineRunner {
             bidListRepository.save(bid1);
             bidListRepository.save(bid2);
             bidListRepository.save(bid3);
-
-          //  System.out.println("Sample bid list data loaded.");
-        } else {
-          //  System.out.println("Bid list data already exists.");
-        }
+ 
+        } 
     }
 }

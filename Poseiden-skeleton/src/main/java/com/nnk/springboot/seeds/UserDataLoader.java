@@ -31,11 +31,8 @@ public class UserDataLoader implements CommandLineRunner{
 
 	            userRepository.save(user1);
 	            userRepository.save(user2);
-
-	            System.out.println("Sample user data loaded.");
-	        } else {
-	            System.out.println("Users data already exists.");
-	        }
+ 
+	        } 
 	    }
 	    
 }
