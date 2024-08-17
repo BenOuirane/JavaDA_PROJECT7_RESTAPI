@@ -22,19 +22,19 @@ import com.nnk.springboot.repositories.UserRepository;
 <span class="fc" id="L22">	}</span>
 	
 	private void loadUserData() {
-<span class="fc" id="L25">	        String encodedPassword = passwordEncoder.encode(&quot;123&quot;);</span>
+<span class="fc" id="L25">	        String encodedPassword = passwordEncoder.encode(&quot;Passw0rd!&quot;);</span>
 <span class="fc" id="L26">	        String encodedPassword1 = passwordEncoder.encode(&quot;Passw0rd!&quot;);</span>
 
 <span class="pc bpc" id="L28" title="1 of 2 branches missed.">	        if (userRepository.count() == 0) {</span>
 <span class="nc" id="L29">	            User user1 = new User(1,&quot;hajer&quot;,encodedPassword,&quot;ben&quot;,&quot;ADMIN&quot;);</span>
-<span class="nc" id="L30">	            User user2 = new User(2,&quot;julien&quot;,encodedPassword1,&quot;cauwet&quot;,&quot;USER&quot;);</span>
+<span class="nc" id="L30">	            User user2 = new User(2,&quot;chedi&quot;,encodedPassword1,&quot;ben&quot;,&quot;USER&quot;);</span>
 
 <span class="nc" id="L32">	            userRepository.save(user1);</span>
 <span class="nc" id="L33">	            userRepository.save(user2);</span>
 
-	        //    System.out.println(&quot;Sample user data loaded.&quot;);
-	        } else {
-	        //    System.out.println(&quot;Users data already exists.&quot;);
+<span class="nc" id="L35">	            System.out.println(&quot;Sample user data loaded.&quot;);</span>
+<span class="nc" id="L36">	        } else {</span>
+<span class="fc" id="L37">	            System.out.println(&quot;Users data already exists.&quot;);</span>
 	        }
 <span class="fc" id="L39">	    }</span>
 	    

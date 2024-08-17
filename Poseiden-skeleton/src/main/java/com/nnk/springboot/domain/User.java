@@ -18,7 +18,8 @@ public class User {
     @Pattern(
         regexp = "^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
         message = "Password must contain at least one uppercase letter, one digit, and one special character"
-    )    private String password;
+    )    
+    private String password;
     @NotBlank(message = "FullName is mandatory")
     private String fullname;
     @NotBlank(message = "Role is mandatory")

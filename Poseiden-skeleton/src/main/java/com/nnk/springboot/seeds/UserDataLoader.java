@@ -22,19 +22,19 @@ public class UserDataLoader implements CommandLineRunner{
 	}
 	
 	private void loadUserData() {
-	        String encodedPassword = passwordEncoder.encode("123");
+	        String encodedPassword = passwordEncoder.encode("Passw0rd!");
 	        String encodedPassword1 = passwordEncoder.encode("Passw0rd!");
 
 	        if (userRepository.count() == 0) {
 	            User user1 = new User(1,"hajer",encodedPassword,"ben","ADMIN");
-	            User user2 = new User(2,"julien",encodedPassword1,"cauwet","USER");
+	            User user2 = new User(2,"chedi",encodedPassword1,"ben","USER");
 
 	            userRepository.save(user1);
 	            userRepository.save(user2);
 
-	        //    System.out.println("Sample user data loaded.");
+	            System.out.println("Sample user data loaded.");
 	        } else {
-	        //    System.out.println("Users data already exists.");
+	            System.out.println("Users data already exists.");
 	        }
 	    }
 	    
