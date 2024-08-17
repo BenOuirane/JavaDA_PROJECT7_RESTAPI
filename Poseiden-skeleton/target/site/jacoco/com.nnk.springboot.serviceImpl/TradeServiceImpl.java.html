@@ -16,33 +16,33 @@ import com.nnk.springboot.service.TradeService;
 
     @Override
     public List&lt;Trade&gt; findAll() {
-<span class="nc" id="L19">        return tradeRepository.findAll();</span>
+<span class="fc" id="L19">        return tradeRepository.findAll();</span>
     }
 
     @Override
     public Trade findById(Integer id) throws TradeNotFoundException {
-<span class="nc" id="L24">        return tradeRepository.findById(id).orElseThrow(() -&gt; new TradeNotFoundException(&quot;Trade not found&quot;));</span>
+<span class="fc" id="L24">        return tradeRepository.findById(id).orElseThrow(() -&gt; new TradeNotFoundException(&quot;Trade not found&quot;));</span>
     }
 
     @Override
     public Trade save(Trade trade) {
-<span class="nc" id="L29">        return tradeRepository.save(trade);</span>
+<span class="fc" id="L29">        return tradeRepository.save(trade);</span>
     }
 
     @Override
     public Trade update(Trade trade) throws TradeNotFoundException {
-<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (!tradeRepository.existsById(trade.getId())) {</span>
-<span class="nc" id="L35">            throw new TradeNotFoundException(&quot;Trade not found&quot;);</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (!tradeRepository.existsById(trade.getId())) {</span>
+<span class="fc" id="L35">            throw new TradeNotFoundException(&quot;Trade not found&quot;);</span>
         }
-<span class="nc" id="L37">        return tradeRepository.save(trade);</span>
+<span class="fc" id="L37">        return tradeRepository.save(trade);</span>
     }
 
     @Override
     public void deleteById(Integer id) throws TradeNotFoundException {
-<span class="nc bnc" id="L42" title="All 2 branches missed.">        if (!tradeRepository.existsById(id)) {</span>
-<span class="nc" id="L43">            throw new TradeNotFoundException(&quot;Trade not found&quot;);</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (!tradeRepository.existsById(id)) {</span>
+<span class="fc" id="L43">            throw new TradeNotFoundException(&quot;Trade not found&quot;);</span>
         }
-<span class="nc" id="L45">        tradeRepository.deleteById(id);</span>
-<span class="nc" id="L46">    }</span>
+<span class="fc" id="L45">        tradeRepository.deleteById(id);</span>
+<span class="fc" id="L46">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

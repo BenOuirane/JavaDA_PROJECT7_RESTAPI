@@ -18,33 +18,33 @@ import com.nnk.springboot.service.RuleNameService;
 
     @Override
     public List&lt;RuleName&gt; findAll() {
-<span class="nc" id="L21">        return ruleNameRepository.findAll();</span>
+<span class="fc" id="L21">        return ruleNameRepository.findAll();</span>
     }
 
     @Override
     public RuleName findById(Integer id) throws RuleNameNotFoundException {
-<span class="nc" id="L26">        return ruleNameRepository.findById(id).orElseThrow(() -&gt; new RuleNameNotFoundException(&quot;RuleName not found&quot;));</span>
+<span class="fc" id="L26">        return ruleNameRepository.findById(id).orElseThrow(() -&gt; new RuleNameNotFoundException(&quot;RuleName not found&quot;));</span>
     }
 
     @Override
     public RuleName save(RuleName ruleName) {
-<span class="nc" id="L31">        return ruleNameRepository.save(ruleName);</span>
+<span class="fc" id="L31">        return ruleNameRepository.save(ruleName);</span>
     }
 
     @Override
     public RuleName update(RuleName ruleName) throws RuleNameNotFoundException {
-<span class="nc bnc" id="L36" title="All 2 branches missed.">        if (!ruleNameRepository.existsById(ruleName.getId())) {</span>
-<span class="nc" id="L37">            throw new RuleNameNotFoundException(&quot;RuleName not found&quot;);</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (!ruleNameRepository.existsById(ruleName.getId())) {</span>
+<span class="fc" id="L37">            throw new RuleNameNotFoundException(&quot;RuleName not found&quot;);</span>
         }
-<span class="nc" id="L39">        return ruleNameRepository.save(ruleName);</span>
+<span class="fc" id="L39">        return ruleNameRepository.save(ruleName);</span>
     }
 
     @Override
     public void deleteById(Integer id) throws RuleNameNotFoundException {
-<span class="nc bnc" id="L44" title="All 2 branches missed.">        if (!ruleNameRepository.existsById(id)) {</span>
-<span class="nc" id="L45">            throw new RuleNameNotFoundException(&quot;RuleName not found&quot;);</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (!ruleNameRepository.existsById(id)) {</span>
+<span class="fc" id="L45">            throw new RuleNameNotFoundException(&quot;RuleName not found&quot;);</span>
         }
-<span class="nc" id="L47">        ruleNameRepository.deleteById(id);</span>
-<span class="nc" id="L48">    }</span>
+<span class="fc" id="L47">        ruleNameRepository.deleteById(id);</span>
+<span class="fc" id="L48">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

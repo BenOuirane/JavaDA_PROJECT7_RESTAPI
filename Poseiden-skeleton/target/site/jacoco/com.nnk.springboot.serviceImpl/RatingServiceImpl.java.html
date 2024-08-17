@@ -20,39 +20,39 @@ import com.nnk.springboot.service.RatingService;
     
     @Override
     public List&lt;Rating&gt; getAllRatings() {
-<span class="nc" id="L23">        return ratingRepository.findAll();</span>
+<span class="fc" id="L23">        return ratingRepository.findAll();</span>
     }
     
     @Override
     public Rating saveRating(Rating rating) {
-<span class="nc" id="L28">        return ratingRepository.save(rating);</span>
+<span class="fc" id="L28">        return ratingRepository.save(rating);</span>
     }
     
     @Override
     public Rating getRatingById(Integer id) throws RatingNotFoundException {
-<span class="nc" id="L33">    	Optional&lt;Rating&gt; rating = ratingRepository.findById(id);</span>
-<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (rating.isPresent()) {</span>
-<span class="nc" id="L35">            return rating.get();</span>
+<span class="fc" id="L33">    	Optional&lt;Rating&gt; rating = ratingRepository.findById(id);</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (rating.isPresent()) {</span>
+<span class="fc" id="L35">            return rating.get();</span>
         } else {
-<span class="nc" id="L37">            throw new RatingNotFoundException(&quot;Rating not found with id: &quot; + id);</span>
+<span class="fc" id="L37">            throw new RatingNotFoundException(&quot;Rating not found with id: &quot; + id);</span>
         }
     }
 
     @Override
     public Rating updateRating(Integer id, Rating rating) throws RatingNotFoundException {
-<span class="nc" id="L43">        Rating existingRating = getRatingById(id);</span>
-<span class="nc" id="L44">        existingRating.setMoodysRating(rating.getMoodysRating());</span>
-<span class="nc" id="L45">        existingRating.setSandPRating(rating.getSandPRating());</span>
-<span class="nc" id="L46">        existingRating.setFitchRating(rating.getFitchRating());</span>
-<span class="nc" id="L47">        existingRating.setOrderNumber(rating.getOrderNumber());</span>
-<span class="nc" id="L48">        return ratingRepository.save(existingRating);</span>
+<span class="fc" id="L43">        Rating existingRating = getRatingById(id);</span>
+<span class="fc" id="L44">        existingRating.setMoodysRating(rating.getMoodysRating());</span>
+<span class="fc" id="L45">        existingRating.setSandPRating(rating.getSandPRating());</span>
+<span class="fc" id="L46">        existingRating.setFitchRating(rating.getFitchRating());</span>
+<span class="fc" id="L47">        existingRating.setOrderNumber(rating.getOrderNumber());</span>
+<span class="fc" id="L48">        return ratingRepository.save(existingRating);</span>
     }
     
     @Override
     public void deleteRating(Integer id) throws RatingNotFoundException {
-<span class="nc" id="L53">        Rating rating = getRatingById(id);</span>
-<span class="nc" id="L54">        ratingRepository.delete(rating);</span>
-<span class="nc" id="L55">    }</span>
+<span class="fc" id="L53">        Rating rating = getRatingById(id);</span>
+<span class="fc" id="L54">        ratingRepository.delete(rating);</span>
+<span class="fc" id="L55">    }</span>
 
 
 }
