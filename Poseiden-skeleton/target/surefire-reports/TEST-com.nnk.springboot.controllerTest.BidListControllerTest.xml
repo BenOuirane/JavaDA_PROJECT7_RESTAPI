@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nnk.springboot.controllerTest.BidListControllerTest" time="5.625" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nnk.springboot.controllerTest.BidListControllerTest" time="5.564" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="D:\Download\sts-4.16.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\benou\AppData\Local\Temp\surefire14605719687260419938\surefirebooter-20240817173044743_3.jar C:\Users\benou\AppData\Local\Temp\surefire14605719687260419938 2024-08-17T17-30-44_429-jvmRun1 surefire-20240817173044743_1tmp surefire_0-20240817173044743_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\benou\AppData\Local\Temp\surefire9979723830748823733\surefirebooter-20240817173143423_3.jar C:\Users\benou\AppData\Local\Temp\surefire9979723830748823733 2024-08-17T17-31-43_002-jvmRun1 surefire-20240817173143423_1tmp surefire_0-20240817173143423_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\target\test-classes;C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\target\classes;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.0\spring-boot-starter-web-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.0\spring-boot-starter-json-3.1.0.jar;C:\Users\benou\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\benou\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\benou\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\benou\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.0\jackson-datatype-jdk8-2.15.0.jar;C:\Users\benou\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\benou\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.0\jackson-module-parameter-names-2.15.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.0\spring-boot-starter-tomcat-3.1.0.jar;C:\Users\benou\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.8\tomcat-embed-core-10.1.8.jar;C:\Users\benou\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.8\tomcat-embed-el-10.1.8.jar;C:\Users\benou\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.8\tomcat-embed-websocket-10.1.8.jar;C:\Users\benou\.m2\repository\org\springframework\spring-web\6.0.9\spring-web-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-beans\6.0.9\spring-beans-6.0.9.jar;C:\Users\benou\.m2\repository\io\micrometer\micrometer-observation\1.11.0\micrometer-observation-1.11.0.jar;C:\Users\benou\.m2\repository\io\micrometer\micrometer-commons\1.11.0\micrometer-commons-1.11.0.jar;C:\Users\benou\.m2\repository\org\springframework\spring-webmvc\6.0.9\spring-webmvc-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-context\6.0.9\spring-context-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-expression\6.0.9\spring-expression-6.0.9.jar;C:\Users\benou\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.0.Final\hibernate-validator-8.0.0.Final.jar;C:\Users\benou\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\benou\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\benou\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.0\spring-boot-starter-test-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-test\3.1.0\spring-boot-test-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.0\spring-boot-test-autoconfigure-3.1.0.jar;C:\Users\benou\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\benou\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\benou\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\benou\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\benou\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\benou\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\benou\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\benou\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\benou\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\benou\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\benou\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\benou\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\benou\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\benou\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\benou\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\benou\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\benou\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\benou\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\benou\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\benou\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\benou\.m2\repository\org\springframework\spring-core\6.0.9\spring-core-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-jcl\6.0.9\spring-jcl-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-test\6.0.9\spring-test-6.0.9.jar;C:\Users\benou\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.1.0\spring-boot-starter-data-jpa-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.0\spring-boot-starter-aop-3.1.0.jar;C:\Users\benou\.m2\repository\org\aspectj\aspectjweaver\1.9.19\aspectjweaver-1.9.19.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.0\spring-boot-starter-jdbc-3.1.0.jar;C:\Users\benou\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\benou\.m2\repository\org\springframework\spring-jdbc\6.0.9\spring-jdbc-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\data\spring-data-jpa\3.1.0\spring-data-jpa-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\data\spring-data-commons\3.1.0\spring-data-commons-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\spring-orm\6.0.9\spring-orm-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-tx\6.0.9\spring-tx-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\spring-aspects\6.0.9\spring-aspects-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.1.0\spring-boot-starter-thymeleaf-3.1.0.jar;C:\Users\benou\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.1.RELEASE\thymeleaf-spring6-3.1.1.RELEASE.jar;C:\Users\benou\.m2\repository\org\thymeleaf\thymeleaf\3.1.1.RELEASE\thymeleaf-3.1.1.RELEASE.jar;C:\Users\benou\.m2\repository\org\attoparser\attoparser\2.0.6.RELEASE\attoparser-2.0.6.RELEASE.jar;C:\Users\benou\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.0\spring-boot-starter-security-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\spring-aop\6.0.9\spring-aop-6.0.9.jar;C:\Users\benou\.m2\repository\org\springframework\security\spring-security-config\6.1.0\spring-security-config-6.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\security\spring-security-web\6.1.0\spring-security-web-6.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-devtools\3.1.0\spring-boot-devtools-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot\3.1.0\spring-boot-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.0\spring-boot-autoconfigure-3.1.0.jar;C:\Users\benou\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\benou\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\benou\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\benou\.m2\repository\org\hibernate\orm\hibernate-core\6.2.2.Final\hibernate-core-6.2.2.Final.jar;C:\Users\benou\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\benou\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\benou\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\benou\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\benou\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\benou\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\benou\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\benou\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\benou\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\benou\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\benou\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\benou\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.0\spring-boot-starter-3.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.0\spring-boot-starter-logging-3.1.0.jar;C:\Users\benou\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\benou\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\benou\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\benou\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\benou\.m2\repository\org\slf4j\jul-to-slf4j\2.0.7\jul-to-slf4j-2.0.7.jar;C:\Users\benou\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\benou\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\benou\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\benou\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\benou\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\benou\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\benou\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\benou\.m2\repository\org\springframework\security\spring-security-test\6.1.0\spring-security-test-6.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\security\spring-security-core\6.1.0\spring-security-core-6.1.0.jar;C:\Users\benou\.m2\repository\org\springframework\security\spring-security-crypto\6.1.0\spring-security-crypto-6.1.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -35,7 +35,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="windows-1252"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\benou\AppData\Local\Temp\surefire14605719687260419938\surefirebooter-20240817173044743_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\benou\AppData\Local\Temp\surefire9979723830748823733\surefirebooter-20240817173143423_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1"/>
@@ -55,7 +55,7 @@
     <property name="user.dir" value="C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="17692"/>
+    <property name="PID" value="11536"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
     <property name="native.encoding" value="Cp1252"/>
@@ -66,9 +66,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testUpdateBid_withValidationErrors_shouldReturnUpdateView" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="2.594">
-    <system-out><![CDATA[2024-08-17T17:31:01.127+02:00  INFO 17692 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.controllerTest.BidListControllerTest]: BidListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-08-17T17:31:01.165+02:00  INFO 17692 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.controllerTest.BidListControllerTest
+  <testcase name="testUpdateBid_withValidationErrors_shouldReturnUpdateView" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="1.87">
+    <system-out><![CDATA[2024-08-17T17:31:57.800+02:00  INFO 11536 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.controllerTest.BidListControllerTest]: BidListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T17:31:57.834+02:00  INFO 11536 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.controllerTest.BidListControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -78,130 +78,130 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.0)
 
-2024-08-17T17:31:01.237+02:00 DEBUG 17692 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@487cdf22
-2024-08-17T17:31:01.615+02:00  INFO 17692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-17T17:31:01.657+02:00  INFO 17692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
-2024-08-17T17:31:01.902+02:00  INFO 17692 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-17T17:31:02.066+02:00 DEBUG 17692 --- [           main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ada2d53) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@45ebdfba)
-2024-08-17T17:31:02.444+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:57.898+02:00 DEBUG 11536 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4d7c00fe
+2024-08-17T17:31:58.216+02:00  INFO 11536 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:31:58.253+02:00  INFO 11536 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:31:58.458+02:00  INFO 11536 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:31:58.701+02:00 DEBUG 11536 --- [           main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@391e3c75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@11cc72c0)
+2024-08-17T17:31:59.236+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column ask set data type float(53)
 Hibernate: 
     alter table if exists bidlist 
        alter column ask set data type float(53)
-2024-08-17T17:31:02.457+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.248+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column ask_quantity set data type float(53)
 Hibernate: 
     alter table if exists bidlist 
        alter column ask_quantity set data type float(53)
-2024-08-17T17:31:02.459+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.250+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column bid set data type float(53)
 Hibernate: 
     alter table if exists bidlist 
        alter column bid set data type float(53)
-2024-08-17T17:31:02.460+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.251+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column bid_list_date set data type timestamp(6)
 Hibernate: 
     alter table if exists bidlist 
        alter column bid_list_date set data type timestamp(6)
-2024-08-17T17:31:02.461+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.253+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column bid_quantity set data type float(53)
 Hibernate: 
     alter table if exists bidlist 
        alter column bid_quantity set data type float(53)
-2024-08-17T17:31:02.463+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.254+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column creation_date set data type timestamp(6)
 Hibernate: 
     alter table if exists bidlist 
        alter column creation_date set data type timestamp(6)
-2024-08-17T17:31:02.464+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.256+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists bidlist 
        alter column revision_date set data type timestamp(6)
 Hibernate: 
     alter table if exists bidlist 
        alter column revision_date set data type timestamp(6)
-2024-08-17T17:31:02.465+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.258+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists curvepoint 
        alter column as_of_date set data type timestamp(6)
 Hibernate: 
     alter table if exists curvepoint 
        alter column as_of_date set data type timestamp(6)
-2024-08-17T17:31:02.467+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.260+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists curvepoint 
        alter column creation_date set data type timestamp(6)
 Hibernate: 
     alter table if exists curvepoint 
        alter column creation_date set data type timestamp(6)
-2024-08-17T17:31:02.467+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.263+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists curvepoint 
        alter column term set data type float(53)
 Hibernate: 
     alter table if exists curvepoint 
        alter column term set data type float(53)
-2024-08-17T17:31:02.469+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.263+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists curvepoint 
        alter column value set data type float(53)
 Hibernate: 
     alter table if exists curvepoint 
        alter column value set data type float(53)
-2024-08-17T17:31:02.471+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.266+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column buy_price set data type float(53)
 Hibernate: 
     alter table if exists trade 
        alter column buy_price set data type float(53)
-2024-08-17T17:31:02.473+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.268+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column buy_quantity set data type float(53)
 Hibernate: 
     alter table if exists trade 
        alter column buy_quantity set data type float(53)
-2024-08-17T17:31:02.474+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.269+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column creation_date set data type timestamp(6)
 Hibernate: 
     alter table if exists trade 
        alter column creation_date set data type timestamp(6)
-2024-08-17T17:31:02.474+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.271+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column revision_date set data type timestamp(6)
 Hibernate: 
     alter table if exists trade 
        alter column revision_date set data type timestamp(6)
-2024-08-17T17:31:02.476+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.273+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column sell_price set data type float(53)
 Hibernate: 
     alter table if exists trade 
        alter column sell_price set data type float(53)
-2024-08-17T17:31:02.476+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.274+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column sell_quantity set data type float(53)
 Hibernate: 
     alter table if exists trade 
        alter column sell_quantity set data type float(53)
-2024-08-17T17:31:02.477+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.276+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     alter table if exists trade 
        alter column trade_date set data type timestamp(6)
 Hibernate: 
     alter table if exists trade 
        alter column trade_date set data type timestamp(6)
-2024-08-17T17:31:02.479+02:00  INFO 17692 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-17T17:31:02.757+02:00  WARN 17692 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-17T17:31:02.815+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
-2024-08-17T17:31:02.876+02:00 DEBUG 17692 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-08-17T17:31:02.893+02:00  INFO 17692 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55db7027, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c1931f3, org.springframework.security.web.context.SecurityContextHolderFilter@138d1051, org.springframework.security.web.header.HeaderWriterFilter@47f15e1a, org.springframework.security.web.authentication.logout.LogoutFilter@53811376, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e1ad831, org.springframework.security.web.session.ConcurrentSessionFilter@16d62896, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e418db4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f409a57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@138694a5, org.springframework.security.web.session.SessionManagementFilter@6e77f4e7, org.springframework.security.web.access.ExceptionTranslationFilter@4cb92cf9, org.springframework.security.web.access.intercept.AuthorizationFilter@ae6a8d5]
-2024-08-17T17:31:02.959+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-08-17T17:31:02.970+02:00 DEBUG 17692 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-08-17T17:31:03.090+02:00  INFO 17692 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-08-17T17:31:03.091+02:00  INFO 17692 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-08-17T17:31:03.092+02:00  INFO 17692 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2024-08-17T17:31:03.115+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:31:59.278+02:00  INFO 11536 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:31:59.632+02:00  WARN 11536 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:31:59.737+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:31:59.858+02:00 DEBUG 11536 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:31:59.888+02:00  INFO 11536 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@120e4e73, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ef49a1a, org.springframework.security.web.context.SecurityContextHolderFilter@7226ecfb, org.springframework.security.web.header.HeaderWriterFilter@6c5bd8cc, org.springframework.security.web.authentication.logout.LogoutFilter@678d14fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d2b8bd7, org.springframework.security.web.session.ConcurrentSessionFilter@41b6c627, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4009c7cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55f90605, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b0d173, org.springframework.security.web.session.SessionManagementFilter@c2a4f3, org.springframework.security.web.access.ExceptionTranslationFilter@7568d96b, org.springframework.security.web.access.intercept.AuthorizationFilter@74e04a55]
+2024-08-17T17:32:00.070+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:32:00.100+02:00 DEBUG 11536 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:32:00.311+02:00  INFO 11536 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T17:32:00.311+02:00  INFO 11536 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T17:32:00.313+02:00  INFO 11536 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-08-17T17:32:00.334+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -211,7 +211,7 @@ Hibernate:
         count(*) 
     from
         bidlist b1_0
-2024-08-17T17:31:03.122+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:32:00.341+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -221,7 +221,7 @@ Hibernate:
         count(*) 
     from
         curvepoint c1_0
-2024-08-17T17:31:03.130+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:32:00.348+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -231,7 +231,7 @@ Hibernate:
         count(*) 
     from
         rating r1_0
-2024-08-17T17:31:03.136+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:32:00.358+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -241,7 +241,7 @@ Hibernate:
         count(*) 
     from
         rulename r1_0
-2024-08-17T17:31:03.142+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:32:00.365+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -251,7 +251,7 @@ Hibernate:
         count(*) 
     from
         trade t1_0
-2024-08-17T17:31:03.348+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:32:00.580+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -261,12 +261,12 @@ Hibernate:
         count(*) 
     from
         users u1_0
-2024-08-17T17:31:04.132+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
-2024-08-17T17:31:04.135+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
-2024-08-17T17:31:04.137+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
-2024-08-17T17:31:04.139+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
-2024-08-17T17:31:04.155+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
-2024-08-17T17:31:04.344+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+2024-08-17T17:32:01.436+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.439+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.441+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.443+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.456+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.601+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.fullname,
@@ -289,17 +289,17 @@ Hibernate:
     where
         u1_0.username=?
 Logged user: null
-2024-08-17T17:31:04.604+02:00 DEBUG 17692 --- [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T17:32:01.853+02:00 DEBUG 11536 --- [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
 ]]></system-out>
   </testcase>
-  <testcase name="testHome" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="0.103"/>
-  <testcase name="testValidate_Failure" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="0.049">
-    <system-out><![CDATA[2024-08-17T17:31:06.645+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
-2024-08-17T17:31:06.646+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
-2024-08-17T17:31:06.646+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
-2024-08-17T17:31:06.647+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
-2024-08-17T17:31:06.648+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
-2024-08-17T17:31:06.651+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+  <testcase name="testHome" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="0.112"/>
+  <testcase name="testValidate_Failure" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="0.053">
+    <system-out><![CDATA[2024-08-17T17:32:03.247+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.248+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.249+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.250+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.251+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.255+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.fullname,
@@ -322,16 +322,16 @@ Hibernate:
     where
         u1_0.username=?
 Logged user: null
-2024-08-17T17:31:06.658+02:00 DEBUG 17692 --- [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T17:32:03.262+02:00 DEBUG 11536 --- [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
 ]]></system-out>
   </testcase>
-  <testcase name="testAddBidForm" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="0.047">
-    <system-out><![CDATA[2024-08-17T17:31:06.703+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
-2024-08-17T17:31:06.704+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
-2024-08-17T17:31:06.704+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
-2024-08-17T17:31:06.705+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
-2024-08-17T17:31:06.706+02:00 DEBUG 17692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
-2024-08-17T17:31:06.709+02:00 DEBUG 17692 --- [           main] org.hibernate.SQL                        : 
+  <testcase name="testAddBidForm" classname="com.nnk.springboot.controllerTest.BidListControllerTest" time="0.054">
+    <system-out><![CDATA[2024-08-17T17:32:03.307+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.308+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.309+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.310+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.311+02:00 DEBUG 11536 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.315+02:00 DEBUG 11536 --- [           main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.fullname,
@@ -354,7 +354,7 @@ Hibernate:
     where
         u1_0.username=?
 Logged user: null
-2024-08-17T17:31:06.713+02:00 DEBUG 17692 --- [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T17:32:03.319+02:00 DEBUG 11536 --- [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
 
 MockHttpServletRequest:
       HTTP Method = GET

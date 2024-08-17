@@ -252,3 +252,661 @@
 2024-08-17T17:31:07.698+02:00  INFO 17692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-08-17T17:31:07.711+02:00 DEBUG 17692 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@487cdf22, started on Sat Aug 17 17:31:01 CEST 2024
 2024-08-17T17:31:07.718+02:00  INFO 17692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:31:46.722+02:00 DEBUG 11536 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e3f86d5
+2024-08-17T17:31:48.133+02:00  INFO 11536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:31:48.317+02:00  INFO 11536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:31:50.504+02:00  INFO 11536 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:31:51.327+02:00 DEBUG 11536 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@48e0d3a7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@57a22410)
+2024-08-17T17:31:53.918+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:31:53.929+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:31:53.930+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:31:53.932+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:31:53.933+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:31:53.934+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:31:53.936+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:31:53.937+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:31:53.939+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:31:53.940+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:31:53.942+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:31:53.944+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:31:53.946+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:31:53.947+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:31:53.949+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:31:53.951+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:31:53.952+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:31:53.954+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:31:53.965+02:00  INFO 11536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:31:54.893+02:00  WARN 11536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:31:55.184+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:31:55.383+02:00 DEBUG 11536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:31:55.469+02:00  INFO 11536 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7eb45060, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ae58000, org.springframework.security.web.context.SecurityContextHolderFilter@49652431, org.springframework.security.web.header.HeaderWriterFilter@7e010bc2, org.springframework.security.web.authentication.logout.LogoutFilter@5dcc3f87, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a9e4177, org.springframework.security.web.session.ConcurrentSessionFilter@55082ca8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ec69823, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c6af94d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2298e5d2, org.springframework.security.web.session.SessionManagementFilter@3c39cf7f, org.springframework.security.web.access.ExceptionTranslationFilter@349cde1a, org.springframework.security.web.access.intercept.AuthorizationFilter@1ab5da0c]
+2024-08-17T17:31:55.837+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:31:55.920+02:00 DEBUG 11536 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:31:56.774+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:31:56.791+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:31:56.797+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:31:56.802+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:31:56.808+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:31:56.999+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:31:57.800+02:00  INFO 11536 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.controllerTest.BidListControllerTest]: BidListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T17:31:57.834+02:00  INFO 11536 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.controllerTest.BidListControllerTest
+2024-08-17T17:31:57.898+02:00 DEBUG 11536 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4d7c00fe
+2024-08-17T17:31:58.216+02:00  INFO 11536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:31:58.253+02:00  INFO 11536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:31:58.458+02:00  INFO 11536 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:31:58.701+02:00 DEBUG 11536 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@391e3c75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@11cc72c0)
+2024-08-17T17:31:59.236+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:31:59.248+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:31:59.250+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:31:59.251+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:31:59.253+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:31:59.254+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:31:59.256+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:31:59.258+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:31:59.260+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:31:59.263+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:31:59.263+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:31:59.266+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:31:59.268+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:31:59.269+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:31:59.271+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:31:59.273+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:31:59.274+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:31:59.276+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:31:59.278+02:00  INFO 11536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:31:59.632+02:00  WARN 11536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:31:59.737+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:31:59.858+02:00 DEBUG 11536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:31:59.888+02:00  INFO 11536 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@120e4e73, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ef49a1a, org.springframework.security.web.context.SecurityContextHolderFilter@7226ecfb, org.springframework.security.web.header.HeaderWriterFilter@6c5bd8cc, org.springframework.security.web.authentication.logout.LogoutFilter@678d14fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d2b8bd7, org.springframework.security.web.session.ConcurrentSessionFilter@41b6c627, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4009c7cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55f90605, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b0d173, org.springframework.security.web.session.SessionManagementFilter@c2a4f3, org.springframework.security.web.access.ExceptionTranslationFilter@7568d96b, org.springframework.security.web.access.intercept.AuthorizationFilter@74e04a55]
+2024-08-17T17:32:00.070+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:32:00.100+02:00 DEBUG 11536 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:32:00.311+02:00  INFO 11536 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T17:32:00.311+02:00  INFO 11536 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T17:32:00.313+02:00  INFO 11536 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-08-17T17:32:00.334+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:32:00.341+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:32:00.348+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:32:00.358+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:32:00.365+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:32:00.580+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:32:01.436+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.439+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.441+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.443+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.456+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#updateBid(Integer, BidList, BindingResult, Model)
+2024-08-17T17:32:01.601+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T17:32:01.853+02:00 DEBUG 11536 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T17:32:03.247+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.248+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.249+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.250+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.251+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#validate(BidList, BindingResult, Model)
+2024-08-17T17:32:03.255+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T17:32:03.262+02:00 DEBUG 11536 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T17:32:03.307+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.308+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.309+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.310+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.311+02:00 DEBUG 11536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nnk.springboot.controllers.BidListController#addBidForm(BidList)
+2024-08-17T17:32:03.315+02:00 DEBUG 11536 --- [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.fullname,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-08-17T17:32:03.319+02:00 DEBUG 11536 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2024-08-17T17:32:03.373+02:00  INFO 11536 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nnk.springboot.PasswordEncodeTest]: PasswordEncodeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T17:32:03.381+02:00  INFO 11536 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nnk.springboot.Application for test class com.nnk.springboot.PasswordEncodeTest
+2024-08-17T17:32:04.433+02:00 DEBUG 11536 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1e3f86d5, started on Sat Aug 17 17:31:46 CEST 2024
+2024-08-17T17:32:04.440+02:00  INFO 11536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:32:04.456+02:00 DEBUG 11536 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4d7c00fe, started on Sat Aug 17 17:31:57 CEST 2024
+2024-08-17T17:32:04.466+02:00  INFO 11536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:39:11.710+02:00 DEBUG 1512 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2f4919b0
+2024-08-17T17:39:12.784+02:00  INFO 1512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:39:12.924+02:00  INFO 1512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:39:14.477+02:00  INFO 1512 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:39:15.059+02:00 DEBUG 1512 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c9cafa5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6c6379c)
+2024-08-17T17:39:16.658+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:39:16.660+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:39:16.661+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:39:16.662+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:39:16.663+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:39:16.664+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:39:16.665+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:39:16.666+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:39:16.667+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:39:16.668+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:39:16.669+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:39:16.671+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:39:16.672+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:39:16.673+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:39:16.674+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:39:16.675+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:39:16.676+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:39:16.677+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:39:16.680+02:00  INFO 1512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:39:17.493+02:00  WARN 1512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:39:17.749+02:00 DEBUG 1512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:39:17.985+02:00 DEBUG 1512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:39:18.061+02:00  INFO 1512 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e5df971, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c7787a7, org.springframework.security.web.context.SecurityContextHolderFilter@240e61, org.springframework.security.web.header.HeaderWriterFilter@623a891d, org.springframework.security.web.authentication.logout.LogoutFilter@3328db4f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44ba9f25, org.springframework.security.web.session.ConcurrentSessionFilter@1e1d813a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2027d56f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7151dd9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ca464bb, org.springframework.security.web.session.SessionManagementFilter@756030e2, org.springframework.security.web.access.ExceptionTranslationFilter@701da311, org.springframework.security.web.access.intercept.AuthorizationFilter@53202b06]
+2024-08-17T17:39:18.314+02:00 DEBUG 1512 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:39:18.391+02:00 DEBUG 1512 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:39:18.670+02:00  INFO 1512 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T17:39:18.671+02:00  INFO 1512 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T17:39:18.674+02:00  INFO 1512 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-08-17T17:39:19.344+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:39:19.360+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:39:19.366+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:39:19.372+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:39:19.378+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:39:19.594+02:00 DEBUG 1512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:39:20.748+02:00 DEBUG 1512 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2f4919b0, started on Sat Aug 17 17:39:11 CEST 2024
+2024-08-17T17:39:20.760+02:00  INFO 1512 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:40:12.691+02:00 DEBUG 1156 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2f4919b0
+2024-08-17T17:40:13.700+02:00  INFO 1156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:40:13.854+02:00  INFO 1156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:40:15.611+02:00  INFO 1156 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:40:16.253+02:00 DEBUG 1156 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@141bb6b8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c8b10b4)
+2024-08-17T17:40:17.671+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:40:17.672+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:40:17.674+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:40:17.675+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:40:17.676+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:40:17.677+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:40:17.677+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:40:17.679+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:40:17.680+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:40:17.681+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:40:17.682+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:40:17.684+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:40:17.685+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:40:17.686+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:40:17.687+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:40:17.688+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:40:17.689+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:40:17.690+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:40:17.693+02:00  INFO 1156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:40:18.827+02:00  WARN 1156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:40:19.095+02:00 DEBUG 1156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:40:19.241+02:00 DEBUG 1156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:40:19.319+02:00  INFO 1156 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5625e7e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59172d2, org.springframework.security.web.context.SecurityContextHolderFilter@189f3ccd, org.springframework.security.web.header.HeaderWriterFilter@365a4b9b, org.springframework.security.web.authentication.logout.LogoutFilter@46baac0d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ae91bcc, org.springframework.security.web.session.ConcurrentSessionFilter@648f48d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@82382d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3328db4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77d42ed7, org.springframework.security.web.session.SessionManagementFilter@76efa2b7, org.springframework.security.web.access.ExceptionTranslationFilter@41d8ac75, org.springframework.security.web.access.intercept.AuthorizationFilter@4f63909f]
+2024-08-17T17:40:19.581+02:00 DEBUG 1156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:40:19.658+02:00 DEBUG 1156 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:40:19.877+02:00  INFO 1156 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T17:40:19.878+02:00  INFO 1156 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T17:40:19.881+02:00  INFO 1156 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-08-17T17:40:20.417+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:40:20.436+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:40:20.442+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:40:20.448+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:40:20.455+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:40:20.693+02:00 DEBUG 1156 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:40:21.793+02:00 DEBUG 1156 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2f4919b0, started on Sat Aug 17 17:40:12 CEST 2024
+2024-08-17T17:40:21.802+02:00  INFO 1156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:43:21.437+02:00 DEBUG 13212 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@a8a8b75
+2024-08-17T17:43:22.728+02:00  INFO 13212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:43:22.915+02:00  INFO 13212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:43:24.776+02:00  INFO 13212 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:43:25.488+02:00 DEBUG 13212 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6c6379c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7df4709e)
+2024-08-17T17:43:27.655+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:43:27.694+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:43:27.697+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:43:27.699+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:43:27.701+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:43:27.703+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:43:27.705+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:43:27.708+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:43:27.711+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:43:27.713+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:43:27.716+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:43:27.718+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:43:27.720+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:43:27.723+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:43:27.726+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:43:27.729+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:43:27.730+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:43:27.732+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:43:27.739+02:00  INFO 13212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:43:28.700+02:00  WARN 13212 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:43:28.972+02:00 DEBUG 13212 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:43:29.191+02:00 DEBUG 13212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:43:29.283+02:00  INFO 13212 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c7787a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ca464bb, org.springframework.security.web.context.SecurityContextHolderFilter@76efa2b7, org.springframework.security.web.header.HeaderWriterFilter@7962a364, org.springframework.security.web.authentication.logout.LogoutFilter@4f9e9c21, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53570fff, org.springframework.security.web.session.ConcurrentSessionFilter@1964ef9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44c54463, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f596988, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4767be27, org.springframework.security.web.session.SessionManagementFilter@134ec0f3, org.springframework.security.web.access.ExceptionTranslationFilter@4fe9fb65, org.springframework.security.web.access.intercept.AuthorizationFilter@44ba9f25]
+2024-08-17T17:43:29.627+02:00 DEBUG 13212 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:43:29.699+02:00 DEBUG 13212 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:43:29.938+02:00  INFO 13212 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T17:43:29.938+02:00  INFO 13212 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T17:43:29.941+02:00  INFO 13212 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-08-17T17:43:30.532+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:43:30.553+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:43:30.561+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:43:30.569+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:43:30.577+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:43:30.836+02:00 DEBUG 13212 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:43:33.137+02:00 DEBUG 13212 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@a8a8b75, started on Sat Aug 17 17:43:21 CEST 2024
+2024-08-17T17:43:33.156+02:00  INFO 13212 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:43:54.410+02:00 DEBUG 11512 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@75b21c3b
+2024-08-17T17:43:55.814+02:00  INFO 11512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:43:56.008+02:00  INFO 11512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:43:58.080+02:00  INFO 11512 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:43:59.200+02:00 DEBUG 11512 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@da34eb0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@785a4557)
+2024-08-17T17:44:02.286+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:44:02.324+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:44:02.327+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:44:02.330+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:44:02.334+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:44:02.336+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:44:02.339+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:44:02.343+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:44:02.346+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:44:02.350+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:44:02.353+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:44:02.358+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:44:02.361+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:44:02.364+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:44:02.369+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:44:02.372+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:44:02.376+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:44:02.379+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:44:02.393+02:00  INFO 11512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:44:04.060+02:00  WARN 11512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:44:04.540+02:00 DEBUG 11512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:44:04.865+02:00 DEBUG 11512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:44:05.011+02:00  INFO 11512 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c2a33af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53202b06, org.springframework.security.web.context.SecurityContextHolderFilter@3891db3a, org.springframework.security.web.header.HeaderWriterFilter@6fb51e17, org.springframework.security.web.authentication.logout.LogoutFilter@82382d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23169374, org.springframework.security.web.session.ConcurrentSessionFilter@58a0f75b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7925e772, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2027d56f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44ba9f25, org.springframework.security.web.session.SessionManagementFilter@721fc228, org.springframework.security.web.access.ExceptionTranslationFilter@684eb4a0, org.springframework.security.web.access.intercept.AuthorizationFilter@3531509c]
+2024-08-17T17:44:05.535+02:00 DEBUG 11512 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:44:05.652+02:00 DEBUG 11512 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:44:06.051+02:00  INFO 11512 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-17T17:44:06.052+02:00  INFO 11512 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-17T17:44:06.056+02:00  INFO 11512 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-08-17T17:44:07.002+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:44:07.027+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:44:07.036+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:44:07.045+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:44:07.054+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:44:07.530+02:00 DEBUG 11512 --- [main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:44:09.738+02:00 DEBUG 11512 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@75b21c3b, started on Sat Aug 17 17:43:54 CEST 2024
+2024-08-17T17:44:09.758+02:00  INFO 11512 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
