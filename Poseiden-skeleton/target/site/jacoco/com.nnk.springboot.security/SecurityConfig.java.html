@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SecurityConfig.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-skeleton</a> &gt; <a href="index.source.html" class="el_package">com.nnk.springboot.security</a> &gt; <span class="el_source">SecurityConfig.java</span></div><h1>SecurityConfig.java</h1><pre class="source lang-java linenums">package com.nnk.springboot.security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
+import com.nnk.springboot.service.CustomUserDetailsService;
+
+/**
+ * Configuration class for Spring Security settings.
+ * This class configures authentication, authorization, and session management
+ * for the application.
+ */
+@Configuration
+@EnableWebSecurity
+<span class="fc" id="L27">public class SecurityConfig {</span>
+
+    @Autowired
+    CustomSuccessHandler customSuccessHandler;
+
+    @Autowired
+    CustomUserDetailsService customerUserDetailsService;
+
+    /**
+     * Defines the password encoder bean using BCrypt.
+     * 
+     * @return a {@link PasswordEncoder} instance.
+     */
+    @Bean
+    public static PasswordEncoder passwordEncoder() {
+<span class="fc" id="L42">        return new BCryptPasswordEncoder();</span>
+    }
+
+    /**
+     * Configures the security filter chain, which includes settings for CSRF,
+     * authorization requests, form login, logout, and session management.
+     * 
+     * @param http the {@link HttpSecurity} to modify.
+     * @return the configured {@link SecurityFilterChain}.
+     * @throws Exception if an error occurs while configuring security.
+     */
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+<span class="fc" id="L55">        http.csrf(c -&gt; c.disable())</span>
+<span class="fc" id="L56">            .authorizeHttpRequests(request -&gt; request</span>
+<span class="fc" id="L57">                .requestMatchers(&quot;/&quot;, &quot;/css/**&quot;).permitAll()</span>
+<span class="fc" id="L58">                .requestMatchers(&quot;/admin/**&quot;).hasAuthority(&quot;ADMIN&quot;)</span>
+<span class="fc" id="L59">                .requestMatchers(&quot;/&quot;).hasAuthority(&quot;USER&quot;)</span>
+<span class="fc" id="L60">                .anyRequest().authenticated()</span>
+            )
+<span class="fc" id="L62">            .formLogin(form -&gt; form</span>
+<span class="fc" id="L63">                .loginPage(&quot;/app/login&quot;)</span>
+<span class="fc" id="L64">                .loginProcessingUrl(&quot;/app/login&quot;)</span>
+<span class="fc" id="L65">                .successHandler(customSuccessHandler)</span>
+<span class="fc" id="L66">                .permitAll()</span>
+            )
+<span class="fc" id="L68">            .logout(logout -&gt; logout</span>
+<span class="fc" id="L69">                .logoutRequestMatcher(new AntPathRequestMatcher(&quot;/app-logout&quot;))</span>
+<span class="fc" id="L70">                .logoutSuccessUrl(&quot;/login?logout&quot;)</span>
+<span class="fc" id="L71">                .invalidateHttpSession(true)</span>
+<span class="fc" id="L72">                .clearAuthentication(true)</span>
+<span class="fc" id="L73">                .permitAll()</span>
+            )
+<span class="fc" id="L75">            .sessionManagement(session -&gt; session</span>
+<span class="fc" id="L76">                .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)</span>
+<span class="fc" id="L77">                .sessionFixation().newSession()</span>
+<span class="fc" id="L78">                .maximumSessions(1)</span>
+<span class="fc" id="L79">                .expiredUrl(&quot;/login?sessionExpired&quot;)</span>
+            );
+
+<span class="fc" id="L82">        return http.build();</span>
+    }
+
+    /**
+     * Configures the authentication manager builder with a custom user details
+     * service and a password encoder.
+     * 
+     * @param auth the {@link AuthenticationManagerBuilder} to configure.
+     * @throws Exception if an error occurs while configuring authentication.
+     */
+    @Autowired
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
+<span class="fc" id="L94">        auth.userDetailsService(customerUserDetailsService).passwordEncoder(passwordEncoder());</span>
+<span class="fc" id="L95">    }</span>
+
+    /**
+     * Retrieves the username of the currently authenticated user.
+     * 
+     * @return the username of the currently authenticated user, or {@code null}
+     *         if no user is authenticated.
+     */
+    public static String getCurrentUsername() {
+<span class="nc" id="L104">        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();</span>
+<span class="nc bnc" id="L105" title="All 4 branches missed.">        if (authentication != null &amp;&amp; authentication.getPrincipal() instanceof UserDetails) {</span>
+<span class="nc" id="L106">            UserDetails userDetails = (UserDetails) authentication.getPrincipal();</span>
+<span class="nc" id="L107">            return userDetails.getUsername();</span>
+        }
+<span class="nc" id="L109">        return null;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

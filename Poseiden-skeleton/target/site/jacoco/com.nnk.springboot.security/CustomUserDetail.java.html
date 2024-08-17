@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CustomUserDetail.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-skeleton</a> &gt; <a href="index.source.html" class="el_package">com.nnk.springboot.security</a> &gt; <span class="el_source">CustomUserDetail.java</span></div><h1>CustomUserDetail.java</h1><pre class="source lang-java linenums">package com.nnk.springboot.security;
+
+import java.util.Collection;
+import java.util.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import com.nnk.springboot.domain.User;
+
+/**
+ * Custom implementation of {@link UserDetails} to represent the authenticated user's details.
+ * This class wraps a {@link User} object and provides the necessary methods required by Spring Security.
+ */
+public class CustomUserDetail implements UserDetails {
+
+    private static final long serialVersionUID = 1L;
+    private User user;
+
+    /**
+     * Constructs a new {@code CustomUserDetail} with the given {@link User}.
+     * 
+     * @param user the {@link User} entity to wrap.
+     */
+<span class="nc" id="L24">    public CustomUserDetail(User user) {</span>
+<span class="nc" id="L25">        this.user = user;</span>
+<span class="nc" id="L26">    }</span>
+
+    /**
+     * Returns the authorities granted to the user. In this implementation, 
+     * it returns the user's role.
+     * 
+     * @return a collection of {@link GrantedAuthority}, which contains the user's role.
+     */
+    @Override
+    public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
+<span class="nc" id="L36">        return List.of(() -&gt; user.getRole());</span>
+    }
+
+    /**
+     * Returns the full name of the user.
+     * 
+     * @return the user's full name.
+     */
+    public String getFullname() {
+<span class="nc" id="L45">        return user.getFullname();</span>
+    }
+
+    /**
+     * Returns the password used to authenticate the user.
+     * 
+     * @return the user's password.
+     */
+    @Override
+    public String getPassword() {
+<span class="nc" id="L55">        return user.getPassword();</span>
+    }
+
+    /**
+     * Returns the username used to authenticate the user.
+     * 
+     * @return the user's username.
+     */
+    @Override
+    public String getUsername() {
+<span class="nc" id="L65">        return user.getUsername();</span>
+    }
+
+    /**
+     * Indicates whether the user's account has expired. This implementation always returns {@code true}.
+     * 
+     * @return {@code true} if the user's account is non-expired, {@code false} otherwise.
+     */
+    @Override
+    public boolean isAccountNonExpired() {
+<span class="nc" id="L75">        return true;</span>
+    }
+
+    /**
+     * Indicates whether the user is locked or unlocked. This implementation always returns {@code true}.
+     * 
+     * @return {@code true} if the user's account is non-locked, {@code false} otherwise.
+     */
+    @Override
+    public boolean isAccountNonLocked() {
+<span class="nc" id="L85">        return true;</span>
+    }
+
+    /**
+     * Indicates whether the user's credentials (password) have expired. 
+     * This implementation always returns {@code true}.
+     * 
+     * @return {@code true} if the user's credentials are non-expired, {@code false} otherwise.
+     */
+    @Override
+    public boolean isCredentialsNonExpired() {
+<span class="nc" id="L96">        return true;</span>
+    }
+
+    /**
+     * Indicates whether the user is enabled or disabled. This implementation always returns {@code true}.
+     * 
+     * @return {@code true} if the user is enabled, {@code false} otherwise.
+     */
+    @Override
+    public boolean isEnabled() {
+<span class="nc" id="L106">        return true;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
