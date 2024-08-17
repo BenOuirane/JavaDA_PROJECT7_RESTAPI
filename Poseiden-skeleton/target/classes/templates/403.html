@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+      <title>Spring Boot</title>
+</head>
+<body>
+   <h3>Access Denied Exception</h3>
+   <div>
+   
+       Logged user : <span th:text="${loggedUser.username}" class="font-weight-bold"></span>
+				             
+   
+	    <form  th:action="@{/app-logout}"  method="POST" sec:authorize="isAuthenticated()">
+	         <input   type="submit" value="Logout"/>
+	    </form>
+   </div> 	 
+    <p class="error" th:text="${errorMsg}">Error</p>
+</body>
+</html>   

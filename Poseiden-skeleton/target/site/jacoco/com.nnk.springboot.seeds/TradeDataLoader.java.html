@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TradeDataLoader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-skeleton</a> &gt; <a href="index.source.html" class="el_package">com.nnk.springboot.seeds</a> &gt; <span class="el_source">TradeDataLoader.java</span></div><h1>TradeDataLoader.java</h1><pre class="source lang-java linenums">package com.nnk.springboot.seeds;
+
+import java.sql.Timestamp;
+import java.time.Instant;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+import com.nnk.springboot.domain.Trade;
+import com.nnk.springboot.repositories.TradeRepository;
+
+
+@Component
+<span class="fc" id="L13">public class TradeDataLoader implements CommandLineRunner {</span>
+
+    @Autowired
+    private TradeRepository tradeRepository;
+
+    @Override
+    public void run(String... args) throws Exception {
+<span class="fc" id="L20">        loadTradeData();</span>
+<span class="fc" id="L21">    }</span>
+
+    private void loadTradeData() {
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        if (tradeRepository.count() == 0) {</span>
+<span class="nc" id="L25">            Trade trade1 = new Trade(1, &quot;Account1&quot;, &quot;Type1&quot;, 100.0, 200.0, 50.0, 60.0, &quot;Benchmark1&quot;, Timestamp.from(Instant.now()), &quot;Security1&quot;, &quot;Status1&quot;, &quot;Trader1&quot;, &quot;Book1&quot;, &quot;CreationName1&quot;, null, &quot;RevisionName1&quot;, null, &quot;DealName1&quot;, &quot;DealType1&quot;, &quot;SourceListId1&quot;, &quot;Side1&quot;);</span>
+<span class="nc" id="L26">            Trade trade2 = new Trade(2, &quot;Account2&quot;, &quot;Type2&quot;, 150.0, 250.0, 55.0, 65.0, &quot;Benchmark2&quot;, Timestamp.from(Instant.now()), &quot;Security2&quot;, &quot;Status2&quot;, &quot;Trader2&quot;, &quot;Book2&quot;, &quot;CreationName2&quot;, null, &quot;RevisionName2&quot;, null, &quot;DealName2&quot;, &quot;DealType2&quot;, &quot;SourceListId2&quot;, &quot;Side2&quot;);</span>
+<span class="nc" id="L27">            Trade trade3 = new Trade(3, &quot;Account3&quot;, &quot;Type3&quot;, 200.0, 300.0, 60.0, 70.0, &quot;Benchmark3&quot;, Timestamp.from(Instant.now()), &quot;Security3&quot;, &quot;Status3&quot;, &quot;Trader3&quot;, &quot;Book3&quot;, &quot;CreationName3&quot;, null, &quot;RevisionName3&quot;, null, &quot;DealName3&quot;, &quot;DealType3&quot;, &quot;SourceListId3&quot;, &quot;Side3&quot;);</span>
+
+<span class="nc" id="L29">            tradeRepository.save(trade1);</span>
+<span class="nc" id="L30">            tradeRepository.save(trade2);</span>
+<span class="nc" id="L31">            tradeRepository.save(trade3);</span>
+
+         //   System.out.println(&quot;Sample trades data loaded.&quot;);
+        } else {
+         //   System.out.println(&quot;Trades data already exists.&quot;);
+        }
+<span class="fc" id="L37">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
