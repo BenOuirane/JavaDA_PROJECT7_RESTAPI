@@ -34410,3 +34410,137 @@ com.nnk.springboot.exceptions.BidListNotFoundException: BidList not found
 2024-08-17T16:59:15.797+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.min.css", parameters={}
 2024-08-17T16:59:15.798+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
 2024-08-17T16:59:15.801+02:00 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-17T17:08:07.611+02:00  INFO 588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-17T17:08:07.632+02:00  INFO 588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 6 JPA repository interfaces.
+2024-08-17T17:08:07.729+02:00  INFO 588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-08-17T17:08:07.744+02:00  INFO 588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 654 ms
+2024-08-17T17:08:07.790+02:00  INFO 588 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-17T17:08:08.059+02:00 DEBUG 588 --- [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c0b849) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@36461b37)
+2024-08-17T17:08:08.189+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask set data type float(53)
+2024-08-17T17:08:08.193+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column ask_quantity set data type float(53)
+2024-08-17T17:08:08.193+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid set data type float(53)
+2024-08-17T17:08:08.194+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_list_date set data type timestamp(6)
+2024-08-17T17:08:08.195+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column bid_quantity set data type float(53)
+2024-08-17T17:08:08.195+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:08:08.196+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists bidlist 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:08:08.196+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column as_of_date set data type timestamp(6)
+2024-08-17T17:08:08.197+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:08:08.197+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column term set data type float(53)
+2024-08-17T17:08:08.198+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists curvepoint 
+       alter column value set data type float(53)
+2024-08-17T17:08:08.198+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_price set data type float(53)
+2024-08-17T17:08:08.199+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column buy_quantity set data type float(53)
+2024-08-17T17:08:08.199+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column creation_date set data type timestamp(6)
+2024-08-17T17:08:08.200+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column revision_date set data type timestamp(6)
+2024-08-17T17:08:08.200+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_price set data type float(53)
+2024-08-17T17:08:08.201+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column sell_quantity set data type float(53)
+2024-08-17T17:08:08.201+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists trade 
+       alter column trade_date set data type timestamp(6)
+2024-08-17T17:08:08.202+02:00  INFO 588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-17T17:08:08.393+02:00  WARN 588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-17T17:08:08.425+02:00 DEBUG 588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 44 mappings in 'requestMappingHandlerMapping'
+2024-08-17T17:08:08.463+02:00 DEBUG 588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-17T17:08:08.476+02:00  INFO 588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b595b37, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56b9c2ea, org.springframework.security.web.context.SecurityContextHolderFilter@214886f8, org.springframework.security.web.header.HeaderWriterFilter@7f18e8c, org.springframework.security.web.authentication.logout.LogoutFilter@32050967, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d9f985e, org.springframework.security.web.session.ConcurrentSessionFilter@50238558, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a46e9b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cc0a7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@222e1fd4, org.springframework.security.web.session.SessionManagementFilter@f646857, org.springframework.security.web.access.ExceptionTranslationFilter@4c47abb7, org.springframework.security.web.access.intercept.AuthorizationFilter@7a01cc4d]
+2024-08-17T17:08:08.501+02:00 DEBUG 588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-17T17:08:08.510+02:00 DEBUG 588 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-17T17:08:08.552+02:00  INFO 588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-17T17:08:08.566+02:00  INFO 588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-08-17T17:08:08.574+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        bidlist b1_0
+2024-08-17T17:08:08.579+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        curvepoint c1_0
+2024-08-17T17:08:08.582+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rating r1_0
+2024-08-17T17:08:08.585+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        rulename r1_0
+2024-08-17T17:08:08.588+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        trade t1_0
+2024-08-17T17:08:08.755+02:00 DEBUG 588 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2024-08-17T17:08:08.761+02:00  INFO 588 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
