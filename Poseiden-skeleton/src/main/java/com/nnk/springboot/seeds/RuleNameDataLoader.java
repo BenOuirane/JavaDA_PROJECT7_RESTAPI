@@ -28,9 +28,9 @@ public class RuleNameDataLoader implements CommandLineRunner {
             ruleNameRepository.save(rule2);
             ruleNameRepository.save(rule3);
 
-            System.out.println("Sample rule names data loaded.");
+         //   System.out.println("Sample rule names data loaded.");
         } else {
-            System.out.println("Rule names data already exists.");
+         //   System.out.println("Rule names data already exists.");
         }
     }
 }

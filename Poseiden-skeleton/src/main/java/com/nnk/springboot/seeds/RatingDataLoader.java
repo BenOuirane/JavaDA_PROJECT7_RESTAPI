@@ -30,7 +30,7 @@ public class RatingDataLoader implements CommandLineRunner {
         
     	}else {
         
-        System.out.println("Sample ratings data loaded.");
+       // System.out.println("Sample ratings data loaded.");
     	}
     }
 

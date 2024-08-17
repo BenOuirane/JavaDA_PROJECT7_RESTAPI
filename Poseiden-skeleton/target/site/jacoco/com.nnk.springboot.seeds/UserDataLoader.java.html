@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserDataLoader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-skeleton</a> &gt; <a href="index.source.html" class="el_package">com.nnk.springboot.seeds</a> &gt; <span class="el_source">UserDataLoader.java</span></div><h1>UserDataLoader.java</h1><pre class="source lang-java linenums">package com.nnk.springboot.seeds;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Component;
+
+import com.nnk.springboot.domain.User;
+import com.nnk.springboot.repositories.UserRepository;
+
+@Component
+<span class="fc" id="L12">public class UserDataLoader implements CommandLineRunner{</span>
+	
+	@Autowired
+	private UserRepository userRepository;
+	   
+<span class="fc" id="L17">    private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();</span>
+
+	@Override
+	public void run(String... args) throws Exception {
+<span class="fc" id="L21">		loadUserData();		</span>
+<span class="fc" id="L22">	}</span>
+	
+	private void loadUserData() {
+<span class="fc" id="L25">	        String encodedPassword = passwordEncoder.encode(&quot;123&quot;);</span>
+<span class="fc" id="L26">	        String encodedPassword1 = passwordEncoder.encode(&quot;Passw0rd!&quot;);</span>
+
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">	        if (userRepository.count() == 0) {</span>
+<span class="nc" id="L29">	            User user1 = new User(1,&quot;hajer&quot;,encodedPassword,&quot;ben&quot;,&quot;ADMIN&quot;);</span>
+<span class="nc" id="L30">	            User user2 = new User(2,&quot;julien&quot;,encodedPassword1,&quot;cauwet&quot;,&quot;USER&quot;);</span>
+
+<span class="nc" id="L32">	            userRepository.save(user1);</span>
+<span class="nc" id="L33">	            userRepository.save(user2);</span>
+
+<span class="nc" id="L35">	            System.out.println(&quot;Sample user data loaded.&quot;);</span>
+<span class="nc" id="L36">	        } else {</span>
+<span class="fc" id="L37">	            System.out.println(&quot;Users data already exists.&quot;);</span>
+	        }
+<span class="fc" id="L39">	    }</span>
+	    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

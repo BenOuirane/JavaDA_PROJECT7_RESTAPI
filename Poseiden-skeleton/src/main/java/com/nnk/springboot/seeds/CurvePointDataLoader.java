@@ -31,9 +31,9 @@ public class CurvePointDataLoader implements CommandLineRunner {
             curvePointRepository.save(curvePoint2);
             curvePointRepository.save(curvePoint3);
 
-            System.out.println("Sample curve point data loaded.");
+          //  System.out.println("Sample curve point data loaded.");
         } else {
-            System.out.println("Curve point data already exists.");
+          //  System.out.println("Curve point data already exists.");
         }
     }
 }

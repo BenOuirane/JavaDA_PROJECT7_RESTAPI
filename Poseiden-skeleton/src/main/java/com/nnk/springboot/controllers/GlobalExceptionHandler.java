@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ConstraintViolationException.class)
     public ModelAndView handleValidationException(ConstraintViolationException ex) {
         logger.error("Validation error: {}", ex.getMessage(), ex);
-        ModelAndView mav = new ModelAndView("error/validation-error");
+        ModelAndView mav = new ModelAndView("404");
         mav.addObject("message", "Validation failed: " + ex.getMessage());
         return mav;
     }
@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ModelAndView handleGeneralException(Exception ex) {
         logger.error("General error: {}", ex.getMessage(), ex);
-        ModelAndView mav = new ModelAndView("error/500");
+        ModelAndView mav = new ModelAndView("500");
         mav.addObject("message", "An unexpected error occurred. Please try again later.");
         return mav;
     }

@@ -30,9 +30,9 @@ public class TradeDataLoader implements CommandLineRunner {
             tradeRepository.save(trade2);
             tradeRepository.save(trade3);
 
-            System.out.println("Sample trades data loaded.");
+         //   System.out.println("Sample trades data loaded.");
         } else {
-            System.out.println("Trades data already exists.");
+         //   System.out.println("Trades data already exists.");
         }
     }
 }

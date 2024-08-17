@@ -80,6 +80,11 @@ public class CurvePoint {
 	public CurvePoint() {
 		super();
 	}
+	public CurvePoint(int id, double term, double value) {
+		this.id = id;
+		this.term = term;
+		this.value = value;	}
+	
 	@Override
 	public String toString() {
 		return "CurvePoint ["

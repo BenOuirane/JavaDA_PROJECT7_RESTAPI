@@ -65,6 +65,13 @@ public class Rating {
 	public Rating() {
 		super();
 	}
+	public Rating(String moodysRating, String sandPRating, String fitchRating, int orderNumber) {
+		this.moodysRating = moodysRating;
+		this.sandPRating = sandPRating;
+		this.fitchRating = fitchRating;
+		this.orderNumber = orderNumber;	
+		}
+	
 	@Override
 	public String toString() {
 		return "Rating [id=" + id + ", moodysRating=" + moodysRating

@@ -215,6 +215,15 @@ public class BidList {
 		public BidList() {
 			super();
 		}
+		public BidList(String account, String type, double bidQuantity) {
+			super();
+			
+			this.account = account;
+			this.type = type;
+			this.bidQuantity = bidQuantity;
+
+			}
+	
 		@Override
 		public String toString() {
 			return "BidList [id=" + id + ", account=" + account + ", type="

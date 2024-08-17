@@ -18,7 +18,7 @@ import javax.validation.Valid;
 @Controller
 public class BidListController {
     // TODO: Inject Bid service
-	
+
 	@Autowired
     private BidListService bidListService;
 
@@ -48,8 +48,9 @@ public class BidListController {
 
     @GetMapping("/bidList/update/{id}")
     public String showUpdateForm(@PathVariable("id") Integer id, Model model) {
+    	 // Fetch the BidList by Id
+        BidList bidList = bidListService.findById(id);
         // TODO: get Bid by Id and to model then show to the form
-    	BidList bidList = bidListService.findById(id);
         model.addAttribute("bidList", bidList);
         return "bidList/update";
      //   return "bidList/update";

@@ -7,7 +7,8 @@
    <h3>Access Denied Exception</h3>
    <div>
    
-       Logged user : <span th:text="${loggedUser.getName()}" class="font-weight-bold"></span>&nbsp;|&nbsp;
+       Logged user : <span th:text="${loggedUser.username}" class="font-weight-bold"></span>
+				             
    
 	    <form  th:action="@{/app-logout}"  method="POST" sec:authorize="isAuthenticated()">
 	         <input   type="submit" value="Logout"/>
