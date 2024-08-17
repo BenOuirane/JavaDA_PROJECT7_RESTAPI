@@ -205,6 +205,12 @@ public class Trade {
 		public Trade() {
 			super();
 		}
+		
+		public Trade(String account, String type) {
+			this.account = account;
+			this.type = type;		
+			}
+		
 		@Override
 		public String toString() {
 			return "Trade [id=" + id + ", account=" + account + ", type=" + type

@@ -1,6 +1,7 @@
 package com.nnk.springboot.controllers;
 
 import com.nnk.springboot.domain.BidList;
+import com.nnk.springboot.exceptions.BidListNotFoundException;
 import com.nnk.springboot.service.BidListService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,9 +71,14 @@ public class BidListController {
 
     @GetMapping("/bidList/delete/{id}")
     public String deleteBid(@PathVariable("id") Integer id, Model model) {
-        // TODO: Find Bid by Id and delete the bid, return to Bid list
-    	 bidListService.deleteById(id);
-         return "redirect:/bidList/list";
-       // return "redirect:/bidList/list";
+    	try {
+            // Attempt to delete the BidList by ID
+            bidListService.deleteById(id);
+            return "redirect:/bidList/list";
+        } catch (BidListNotFoundException e) {
+            // Handle the case where the BidList with the given ID is not found
+            model.addAttribute("error", "BidList with ID " + id + " not found.");
+            return "redirect:/bidList/list";  // Optionally redirect to the list page with an error message
+        }
     }
 }

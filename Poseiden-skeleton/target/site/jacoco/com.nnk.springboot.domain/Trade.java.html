@@ -205,19 +205,25 @@ public class Trade {
 		public Trade() {
 <span class="fc" id="L206">			super();</span>
 <span class="fc" id="L207">		}</span>
+		
+<span class="nc" id="L209">		public Trade(String account, String type) {</span>
+<span class="nc" id="L210">			this.account = account;</span>
+<span class="nc" id="L211">			this.type = type;		</span>
+<span class="nc" id="L212">			}</span>
+		
 		@Override
 		public String toString() {
-<span class="nc" id="L210">			return &quot;Trade [id=&quot; + id + &quot;, account=&quot; + account + &quot;, type=&quot; + type</span>
-<span class="nc" id="L211">					+ &quot;, buyQuantity=&quot; + buyQuantity + &quot;, sellQuantity=&quot;</span>
-<span class="nc" id="L212">					+ sellQuantity + &quot;, buyPrice=&quot; + buyPrice + &quot;, sellPrice=&quot;</span>
-<span class="nc" id="L213">					+ sellPrice + &quot;, benchmark=&quot; + benchmark + &quot;, tradeDate=&quot;</span>
-<span class="nc" id="L214">					+ tradeDate + &quot;, security=&quot; + security + &quot;, status=&quot;</span>
-<span class="nc" id="L215">					+ status + &quot;, trader=&quot; + trader + &quot;, book=&quot; + book</span>
-<span class="nc" id="L216">					+ &quot;, creationName=&quot; + creationName + &quot;, creationDate=&quot;</span>
-<span class="nc" id="L217">					+ creationDate + &quot;, revisionName=&quot; + revisionName</span>
-<span class="nc" id="L218">					+ &quot;, revisionDate=&quot; + revisionDate + &quot;, dealName=&quot;</span>
-<span class="nc" id="L219">					+ dealName + &quot;, dealType=&quot; + dealType + &quot;, sourceListId=&quot;</span>
-<span class="nc" id="L220">					+ sourceListId + &quot;, side=&quot; + side + &quot;]&quot;;</span>
+<span class="nc" id="L216">			return &quot;Trade [id=&quot; + id + &quot;, account=&quot; + account + &quot;, type=&quot; + type</span>
+<span class="nc" id="L217">					+ &quot;, buyQuantity=&quot; + buyQuantity + &quot;, sellQuantity=&quot;</span>
+<span class="nc" id="L218">					+ sellQuantity + &quot;, buyPrice=&quot; + buyPrice + &quot;, sellPrice=&quot;</span>
+<span class="nc" id="L219">					+ sellPrice + &quot;, benchmark=&quot; + benchmark + &quot;, tradeDate=&quot;</span>
+<span class="nc" id="L220">					+ tradeDate + &quot;, security=&quot; + security + &quot;, status=&quot;</span>
+<span class="nc" id="L221">					+ status + &quot;, trader=&quot; + trader + &quot;, book=&quot; + book</span>
+<span class="nc" id="L222">					+ &quot;, creationName=&quot; + creationName + &quot;, creationDate=&quot;</span>
+<span class="nc" id="L223">					+ creationDate + &quot;, revisionName=&quot; + revisionName</span>
+<span class="nc" id="L224">					+ &quot;, revisionDate=&quot; + revisionDate + &quot;, dealName=&quot;</span>
+<span class="nc" id="L225">					+ dealName + &quot;, dealType=&quot; + dealType + &quot;, sourceListId=&quot;</span>
+<span class="nc" id="L226">					+ sourceListId + &quot;, side=&quot; + side + &quot;]&quot;;</span>
 		}
 	    
 

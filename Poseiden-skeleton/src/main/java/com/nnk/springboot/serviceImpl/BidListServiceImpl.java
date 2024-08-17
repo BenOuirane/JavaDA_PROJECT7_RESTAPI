@@ -31,6 +31,7 @@ public class BidListServiceImpl implements BidListService{
         return bidListRepository.save(bidList);
     }
 
+ 
     @Override
     public BidList update(BidList bidList) throws BidListNotFoundException {
         if (!bidListRepository.existsById(bidList.getId())) {

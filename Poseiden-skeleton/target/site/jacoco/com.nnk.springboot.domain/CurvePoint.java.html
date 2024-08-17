@@ -80,14 +80,19 @@ public class CurvePoint {
 	public CurvePoint() {
 <span class="fc" id="L81">		super();</span>
 <span class="fc" id="L82">	}</span>
+<span class="nc" id="L83">	public CurvePoint(int id, double term, double value) {</span>
+<span class="nc" id="L84">		this.id = id;</span>
+<span class="nc" id="L85">		this.term = term;</span>
+<span class="nc" id="L86">		this.value = value;	}</span>
+	
 	@Override
 	public String toString() {
-<span class="nc" id="L85">		return &quot;CurvePoint [&quot;</span>
-<span class="nc" id="L86">				+ &quot;id=&quot; + id </span>
+<span class="nc" id="L90">		return &quot;CurvePoint [&quot;</span>
+<span class="nc" id="L91">				+ &quot;id=&quot; + id </span>
 			//	+ &quot;, curveId=&quot; + curveId
-<span class="nc" id="L88">				+ &quot;, asOfDate=&quot;</span>
-<span class="nc" id="L89">				+ asOfDate + &quot;, term=&quot; + term + &quot;, value=&quot; + value</span>
-<span class="nc" id="L90">				+ &quot;, creationDate=&quot; + creationDate + &quot;]&quot;;</span>
+<span class="nc" id="L93">				+ &quot;, asOfDate=&quot;</span>
+<span class="nc" id="L94">				+ asOfDate + &quot;, term=&quot; + term + &quot;, value=&quot; + value</span>
+<span class="nc" id="L95">				+ &quot;, creationDate=&quot; + creationDate + &quot;]&quot;;</span>
 	}
     
     

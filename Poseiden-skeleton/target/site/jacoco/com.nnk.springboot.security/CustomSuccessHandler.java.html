@@ -10,33 +10,43 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+/**
+ * Custom handler for processing successful authentication events.
+ * This class redirects users to different pages based on their roles after a successful login.
+ */
 @Component
-<span class="fc" id="L14">public class CustomSuccessHandler implements AuthenticationSuccessHandler {</span>
+<span class="fc" id="L18">public class CustomSuccessHandler implements AuthenticationSuccessHandler {</span>
 
-	@Override
-	public void onAuthenticationSuccess(HttpServletRequest request,
-		                             	HttpServletResponse response, 
-		                             	Authentication authentication)
-			throws IOException, ServletException {
-		// TODO Auto-generated method stub		
-<span class="nc" id="L22">		HttpSession session = request.getSession();</span>
-        //session.setAttribute(&quot;customAttribute&quot;, &quot;customValue&quot;);
-<span class="nc" id="L24">        String username = authentication.getName();</span>
-<span class="nc" id="L25">        session.setAttribute(&quot;username&quot;, username); // Stocker le nom d'utilisateur</span>
+    /**
+     * Handles the successful authentication event by redirecting users to different pages 
+     * based on their roles and storing the username in the session.
+     *
+     * @param request        the {@link HttpServletRequest} that resulted in successful authentication.
+     * @param response       the {@link HttpServletResponse} so you can redirect the user after login.
+     * @param authentication the {@link Authentication} object that contains the details of the authenticated user.
+     * @throws IOException      if an input or output exception occurs.
+     * @throws ServletException if a servlet-specific error occurs.
+     */
+    @Override
+    public void onAuthenticationSuccess(HttpServletRequest request,
+                                        HttpServletResponse response,
+                                        Authentication authentication)
+            throws IOException, ServletException {
+        
+<span class="nc" id="L36">        HttpSession session = request.getSession();</span>
+<span class="nc" id="L37">        String username = authentication.getName();</span>
+<span class="nc" id="L38">        session.setAttribute(&quot;username&quot;, username); // Store the username in the session</span>
 
+<span class="nc" id="L40">        var authorities = authentication.getAuthorities();</span>
+<span class="nc" id="L41">        var roles = authorities.stream().map(r -&gt; r.getAuthority()).findFirst();</span>
 
-       // response.sendRedirect(&quot;/&quot;);
-<span class="nc" id="L29">		var authourities = authentication.getAuthorities();</span>
-<span class="nc" id="L30">		var roles = authourities.stream().map(r -&gt; r.getAuthority()).findFirst();</span>
-<span class="nc bnc" id="L31" title="All 2 branches missed.">		if (roles.orElse(&quot;&quot;).equals(&quot;ADMIN&quot;)) {</span>
-<span class="nc" id="L32">			response.sendRedirect(&quot;/admin/home&quot;);</span>
-<span class="nc bnc" id="L33" title="All 2 branches missed.">		} else if (roles.orElse(&quot;&quot;).equals(&quot;USER&quot;)) {</span>
-<span class="nc" id="L34">			response.sendRedirect(&quot;/&quot;);</span>
-<span class="nc" id="L35">		} else {</span>
-<span class="nc" id="L36">			response.sendRedirect(&quot;/error&quot;);</span>
-		}
-		
-<span class="nc" id="L39">	}</span>
-
+<span class="nc bnc" id="L43" title="All 2 branches missed.">        if (roles.orElse(&quot;&quot;).equals(&quot;ADMIN&quot;)) {</span>
+<span class="nc" id="L44">            response.sendRedirect(&quot;/admin/home&quot;);</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">        } else if (roles.orElse(&quot;&quot;).equals(&quot;USER&quot;)) {</span>
+<span class="nc" id="L46">            response.sendRedirect(&quot;/&quot;);</span>
+<span class="nc" id="L47">        } else {</span>
+<span class="nc" id="L48">            response.sendRedirect(&quot;/error&quot;);</span>
+        }
+<span class="nc" id="L50">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -50,25 +50,25 @@ public class BidList {
 	    private String sourceListId;
 	    private String side;
 		public Integer getId() {
-<span class="nc" id="L53">			return id;</span>
+<span class="fc" id="L53">			return id;</span>
 		}
 		public void setId(Integer id) {
-<span class="nc" id="L56">			this.id = id;</span>
-<span class="nc" id="L57">		}</span>
+<span class="fc" id="L56">			this.id = id;</span>
+<span class="fc" id="L57">		}</span>
 		public String getAccount() {
-<span class="nc" id="L59">			return account;</span>
+<span class="fc" id="L59">			return account;</span>
 		}
 		public void setAccount(String account) {
-<span class="nc" id="L62">			this.account = account;</span>
-<span class="nc" id="L63">		}</span>
+<span class="fc" id="L62">			this.account = account;</span>
+<span class="fc" id="L63">		}</span>
 		public String getType() {
-<span class="nc" id="L65">			return type;</span>
+<span class="fc" id="L65">			return type;</span>
 		}
 		public void setType(String type) {
-<span class="nc" id="L68">			this.type = type;</span>
-<span class="nc" id="L69">		}</span>
+<span class="fc" id="L68">			this.type = type;</span>
+<span class="fc" id="L69">		}</span>
 		public Double getBidQuantity() {
-<span class="nc" id="L71">			return bidQuantity;</span>
+<span class="fc" id="L71">			return bidQuantity;</span>
 		}
 		public void setBidQuantity(Double bidQuantity) {
 <span class="nc" id="L74">			this.bidQuantity = bidQuantity;</span>
@@ -217,25 +217,26 @@ public class BidList {
 <span class="fc" id="L217">		}</span>
 		public BidList(String account, String type, double bidQuantity) {
 <span class="nc" id="L219">			super();</span>
-<span class="nc" id="L220">			this.account = account;</span>
-<span class="nc" id="L221">			this.type = type;</span>
-<span class="nc" id="L222">			this.bidQuantity = bidQuantity;</span>
+			
+<span class="nc" id="L221">			this.account = account;</span>
+<span class="nc" id="L222">			this.type = type;</span>
+<span class="nc" id="L223">			this.bidQuantity = bidQuantity;</span>
 
-<span class="nc" id="L224">			}</span>
+<span class="nc" id="L225">			}</span>
 	
 		@Override
 		public String toString() {
-<span class="nc" id="L228">			return &quot;BidList [id=&quot; + id + &quot;, account=&quot; + account + &quot;, type=&quot;</span>
-<span class="nc" id="L229">					+ type + &quot;, bidQuantity=&quot; + bidQuantity + &quot;, askQuantity=&quot;</span>
-<span class="nc" id="L230">					+ askQuantity + &quot;, bid=&quot; + bid + &quot;, ask=&quot; + ask</span>
-<span class="nc" id="L231">					+ &quot;, benchmark=&quot; + benchmark + &quot;, bidListDate=&quot;</span>
-<span class="nc" id="L232">					+ bidListDate + &quot;, commentary=&quot; + commentary + &quot;, security=&quot;</span>
-<span class="nc" id="L233">					+ security + &quot;, status=&quot; + status + &quot;, trader=&quot; + trader</span>
-<span class="nc" id="L234">					+ &quot;, book=&quot; + book + &quot;, creationName=&quot; + creationName</span>
-<span class="nc" id="L235">					+ &quot;, creationDate=&quot; + creationDate + &quot;, revisionName=&quot;</span>
-<span class="nc" id="L236">					+ revisionName + &quot;, revisionDate=&quot; + revisionDate</span>
-<span class="nc" id="L237">					+ &quot;, dealName=&quot; + dealName + &quot;, dealType=&quot; + dealType</span>
-<span class="nc" id="L238">					+ &quot;, sourceListId=&quot; + sourceListId + &quot;, side=&quot; + side + &quot;]&quot;;</span>
+<span class="fc" id="L229">			return &quot;BidList [id=&quot; + id + &quot;, account=&quot; + account + &quot;, type=&quot;</span>
+<span class="fc" id="L230">					+ type + &quot;, bidQuantity=&quot; + bidQuantity + &quot;, askQuantity=&quot;</span>
+<span class="fc" id="L231">					+ askQuantity + &quot;, bid=&quot; + bid + &quot;, ask=&quot; + ask</span>
+<span class="fc" id="L232">					+ &quot;, benchmark=&quot; + benchmark + &quot;, bidListDate=&quot;</span>
+<span class="fc" id="L233">					+ bidListDate + &quot;, commentary=&quot; + commentary + &quot;, security=&quot;</span>
+<span class="fc" id="L234">					+ security + &quot;, status=&quot; + status + &quot;, trader=&quot; + trader</span>
+<span class="fc" id="L235">					+ &quot;, book=&quot; + book + &quot;, creationName=&quot; + creationName</span>
+<span class="fc" id="L236">					+ &quot;, creationDate=&quot; + creationDate + &quot;, revisionName=&quot;</span>
+<span class="fc" id="L237">					+ revisionName + &quot;, revisionDate=&quot; + revisionDate</span>
+<span class="fc" id="L238">					+ &quot;, dealName=&quot; + dealName + &quot;, dealType=&quot; + dealType</span>
+<span class="fc" id="L239">					+ &quot;, sourceListId=&quot; + sourceListId + &quot;, side=&quot; + side + &quot;]&quot;;</span>
 		}
 		
 

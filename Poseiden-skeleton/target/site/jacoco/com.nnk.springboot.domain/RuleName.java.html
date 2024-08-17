@@ -78,14 +78,25 @@ public class RuleName {
 <span class="nc" id="L78">		this.sqlStr = sqlStr;</span>
 <span class="nc" id="L79">		this.sqlPart = sqlPart;</span>
 <span class="nc" id="L80">	}</span>
+	
 	public RuleName() {
-<span class="fc" id="L82">		super();</span>
-<span class="fc" id="L83">	}</span>
+<span class="fc" id="L83">		super();</span>
+<span class="fc" id="L84">	}</span>
+	
+<span class="nc" id="L86">	public RuleName(String name, String description, String json,</span>
+			String template, String sqlStr, String sqlPart) {
+<span class="nc" id="L88">		this.name = name;</span>
+<span class="nc" id="L89">		this.description = description;</span>
+<span class="nc" id="L90">		this.json = json;</span>
+<span class="nc" id="L91">		this.template = template;</span>
+<span class="nc" id="L92">		this.sqlStr = sqlStr;</span>
+<span class="nc" id="L93">		this.sqlPart = sqlPart;	}</span>
+		
 	@Override
 	public String toString() {
-<span class="nc" id="L86">		return &quot;RuleName [id=&quot; + id + &quot;, name=&quot; + name + &quot;, description=&quot;</span>
-<span class="nc" id="L87">				+ description + &quot;, json=&quot; + json + &quot;, template=&quot; + template</span>
-<span class="nc" id="L88">				+ &quot;, sqlStr=&quot; + sqlStr + &quot;, sqlPart=&quot; + sqlPart + &quot;]&quot;;</span>
+<span class="nc" id="L97">		return &quot;RuleName [id=&quot; + id + &quot;, name=&quot; + name + &quot;, description=&quot;</span>
+<span class="nc" id="L98">				+ description + &quot;, json=&quot; + json + &quot;, template=&quot; + template</span>
+<span class="nc" id="L99">				+ &quot;, sqlStr=&quot; + sqlStr + &quot;, sqlPart=&quot; + sqlPart + &quot;]&quot;;</span>
 	}
     
 

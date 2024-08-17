@@ -65,11 +65,18 @@ public class Rating {
 	public Rating() {
 <span class="fc" id="L66">		super();</span>
 <span class="fc" id="L67">	}</span>
+<span class="nc" id="L68">	public Rating(String moodysRating, String sandPRating, String fitchRating, int orderNumber) {</span>
+<span class="nc" id="L69">		this.moodysRating = moodysRating;</span>
+<span class="nc" id="L70">		this.sandPRating = sandPRating;</span>
+<span class="nc" id="L71">		this.fitchRating = fitchRating;</span>
+<span class="nc" id="L72">		this.orderNumber = orderNumber;	</span>
+<span class="nc" id="L73">		}</span>
+	
 	@Override
 	public String toString() {
-<span class="nc" id="L70">		return &quot;Rating [id=&quot; + id + &quot;, moodysRating=&quot; + moodysRating</span>
-<span class="nc" id="L71">				+ &quot;, sandPRating=&quot; + sandPRating + &quot;, fitchRating=&quot;</span>
-<span class="nc" id="L72">				+ fitchRating + &quot;, orderNumber=&quot; + orderNumber + &quot;]&quot;;</span>
+<span class="nc" id="L77">		return &quot;Rating [id=&quot; + id + &quot;, moodysRating=&quot; + moodysRating</span>
+<span class="nc" id="L78">				+ &quot;, sandPRating=&quot; + sandPRating + &quot;, fitchRating=&quot;</span>
+<span class="nc" id="L79">				+ fitchRating + &quot;, orderNumber=&quot; + orderNumber + &quot;]&quot;;</span>
 	}
     
 

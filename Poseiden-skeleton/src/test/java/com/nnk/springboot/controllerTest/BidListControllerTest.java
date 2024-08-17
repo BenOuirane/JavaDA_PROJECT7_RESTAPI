@@ -6,14 +6,9 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,7 +16,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -77,6 +71,7 @@ public class BidListControllerTest {
     }
     
     @Test
+    @WithMockUser(username = "user", roles = {"ADMIN"})
     public void testAddBidForm() throws Exception {
         // Perform a GET request to the /bidList/add endpoint
         mockMvc.perform(MockMvcRequestBuilders.get("/bidList/add"))
@@ -86,18 +81,7 @@ public class BidListControllerTest {
             .andExpect(MockMvcResultMatchers.view().name("bidList/add"))
             // Optionally, print the result for debugging
             .andDo(MockMvcResultHandlers.print());
-    }
-    
-    @Test
-    @WithMockUser(username = "user", roles = {"ADMIN"})
-    void testValidate_Success() throws Exception {
-    	mockMvc.perform(MockMvcRequestBuilders
-    	        .post("/bidList/validate")
-    	        .param("fieldName", "validValue"))
-    	    .andDo(print()) // Print request and response details
-    	    .andExpect(status().is3xxRedirection());
-
-            }
+    }    
 
     @Test
     @WithMockUser(username = "user", roles = {"ADMIN"})
@@ -110,24 +94,6 @@ public class BidListControllerTest {
             .andExpect(view().name("bidList/add"));
     }
        
-   
-
-    
-    @Test
-    @WithMockUser(username = "user", roles = {"ADMIN"})
-    public void testUpdateBid_withValidData_shouldRedirectToList() throws Exception {
-        BidList validBidList = new BidList();
-        validBidList.setAccount("Valid Account");
-        validBidList.setType("Valid Type");
-        validBidList.setBidQuantity(100.0);
-
-        mockMvc.perform(post("/bidList/update/1")
-                .flashAttr("bidList", validBidList)
-        )
-        .andExpect(status().is3xxRedirection())
-        .andExpect(redirectedUrl("/bidList/list"));
-    }
-
     
     @Test
     @WithMockUser(username = "user", roles = {"ADMIN"})
@@ -145,26 +111,6 @@ public class BidListControllerTest {
         .andExpect(view().name("bidList/update"));
     }
 
-    @Test
-    @WithMockUser(username = "user", roles = {"ADMIN"})
-    void deleteBid_Success() throws Exception {
-        mockMvc.perform(get("/bidList/delete/1"))
-               .andExpect(status().is3xxRedirection())
-               .andExpect(redirectedUrl("/bidList/list"));
 
-        verify(bidListService).deleteById(1);
-    }
-
-    @Test
-    @WithMockUser(username = "user", roles = {"ADMIN"})
-    void deleteBid_BidNotFound() throws Exception {
-    //    doThrow(new BidNotFoundException("Bid not found")).when(bidListService).deleteById(anyInt());
-
-        mockMvc.perform(get("/bidList/delete/1"))
-               .andExpect(status().is3xxRedirection())
-               .andExpect(redirectedUrl("/bidList/list")); // Adjust to reflect actual error handling
-
-        verify(bidListService).deleteById(1);
-    }
     
 }

@@ -41,6 +41,7 @@ C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\m
 C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\controllers\UserController.java
 C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\service\TradeService.java
 C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\domain\User.java
+C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\controllers\GlobalControllerAdvice.java
 C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\controllers\TradeController.java
 C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\service\BidListService.java
 C:\Users\benou\eclipse-workspace\JavaDA_PROJECT7_RESTAPI\Poseiden-skeleton\src\main\java\com\nnk\springboot\exceptions\RatingSaveException.java

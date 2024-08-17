@@ -16,7 +16,7 @@ import jakarta.validation.ConstraintViolationException;
     @ExceptionHandler(ConstraintViolationException.class)
     public ModelAndView handleValidationException(ConstraintViolationException ex) {
 <span class="nc" id="L18">        logger.error(&quot;Validation error: {}&quot;, ex.getMessage(), ex);</span>
-<span class="nc" id="L19">        ModelAndView mav = new ModelAndView(&quot;error/validation-error&quot;);</span>
+<span class="nc" id="L19">        ModelAndView mav = new ModelAndView(&quot;404&quot;);</span>
 <span class="nc" id="L20">        mav.addObject(&quot;message&quot;, &quot;Validation failed: &quot; + ex.getMessage());</span>
 <span class="nc" id="L21">        return mav;</span>
     }
@@ -24,7 +24,7 @@ import jakarta.validation.ConstraintViolationException;
     @ExceptionHandler(Exception.class)
     public ModelAndView handleGeneralException(Exception ex) {
 <span class="nc" id="L26">        logger.error(&quot;General error: {}&quot;, ex.getMessage(), ex);</span>
-<span class="nc" id="L27">        ModelAndView mav = new ModelAndView(&quot;error/500&quot;);</span>
+<span class="nc" id="L27">        ModelAndView mav = new ModelAndView(&quot;500&quot;);</span>
 <span class="nc" id="L28">        mav.addObject(&quot;message&quot;, &quot;An unexpected error occurred. Please try again later.&quot;);</span>
 <span class="nc" id="L29">        return mav;</span>
     }
