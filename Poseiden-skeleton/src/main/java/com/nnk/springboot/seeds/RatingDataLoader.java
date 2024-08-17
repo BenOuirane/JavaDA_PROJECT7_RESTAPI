@@ -28,9 +28,6 @@ public class RatingDataLoader implements CommandLineRunner {
         ratingRepository.save(rating2);
         ratingRepository.save(rating3);
         
-    	}else {
-        
-       // System.out.println("Sample ratings data loaded.");
     	}
     }
 

@@ -28,7 +28,6 @@ public class BidListDataLoader implements CommandLineRunner {
             bidListRepository.save(bid1);
             bidListRepository.save(bid2);
             bidListRepository.save(bid3);
- 
         } 
     }
 }

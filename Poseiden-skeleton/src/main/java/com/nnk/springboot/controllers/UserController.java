@@ -80,7 +80,6 @@ public class UserController {
             throw e; // Re-throw to be handled by the global exception handler
         }
     }
-
     
     @GetMapping("/user/delete/{id}")
     public String deleteUser(@PathVariable("id") Integer id, Model model) {
